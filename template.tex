@@ -75,7 +75,7 @@
 \vgtcpapertype{please specify}
 
 %% Paper title.
-\title{Assignment 1 - CS 458}
+\title{Assignment 2 - CS 458}
 
 %% This is how authors are specified in the journal style
 
@@ -135,7 +135,7 @@
 
 \section{Introduction} %for journal use above \firstsection{..} instead
 
-\subsection{What's the problem?}
+\subsection{Problem}
 Within the last decade, numerous works have surfaced that suggest climate change has detrimental effects on many 
 aspects of the environment. One indicator of climate change in a geographic region is air quality, which is measured 
 in parts per million of particulate matter. Generally, any particulate less than 2.5 microns in diameter meets the 
@@ -144,7 +144,7 @@ number on the air quality index, which corresponds to bad air quality - can be b
 climate change. Identifying areas in which the air quality is markedly bad or decreasing over time can provide a way 
 to focus climate change studies and environmental science efforts.
 
-\subsection{Why does this problem need a visualization?}
+\subsection{Motivation}
 Though there is much data available on the topic of air quality, very little of it is not simply presented in a table 
 or list. Of the visualizations that do exist, many are simply colored maps that make darker or more saturated colors 
 correspond to worse air qualities. Thus, it can be hard to see just which areas present a problem over time (
@@ -152,7 +152,7 @@ signified by either a continual or sudden, severe decrease in air quality). A vi
 both the magnitude of the air quality index and give an indication of how the quality was increasing or decreasing 
 over time would be very useful to researchers in the field.
 
-\subsection{Who are our potential users?}
+\subsection{Potential Users}
 Our potential users include researchers and climate change/air quality scientists who study geographic regions in the 
 western US. (We will focus our visualization on this region in order to make the scope appropriate for this project.) 
 This visualization will ideally give scientists a quick overview of air quality trends in an area, which could 
@@ -165,7 +165,7 @@ relocate to a certain state. A citizen activist might also be interested in this
 their region about the dangers of poor air quality. Multiple cases such as these exist and might be well served by 
 this visualization.
 
-\subsection{What is our general approach?}
+\subsection{General Approach}
 We will pull data from the American Health Rankings site by the United Health Foundation. We will use this to 
 aggregate data from the air quality measures of 13 western region states over the past 10 years. We then intend to 
 make a 
@@ -185,7 +185,19 @@ the block; green = decreasing/getting better, red = increasing/getting worse, mo
   \end{itemize}
 \end{itemize}
 
-\section{Data Sources}
+
+\section{Related Work}
+********** FILL IN WITH PREVIOUS WORK IN THE FIELD OF AIR POLLUTION RESEARCH AND VISUALIZATIONS ***********
+
+\section{Background}
+********** FILL IN WITH QUESTIONS WE'RE TRYING TO ANSWER *************
+
+\section{Methods}
+\subsection{Data Sources}
+**note: should probably just move all these links to citations and just summarize here
+**double note: also need to add eastern region states
+
+
 We will be pulling data from the United Health Foundation’s website that catalogues data about each state by year. We 
 will be studying 11 different states in the western US. We chose the western United States as the data set was 
 relevant to our team's interest and to keep the project within a manageable scope.
@@ -207,7 +219,7 @@ http://www.americashealthrankings.org/explore/2015-annual-report/measure/air/sta
 \end{itemize}
 
 
-\section{Data Organization}
+\subsection{Data Organization}
 
 We set up our data in the form of 3 tables, 1 for the states, one for the years, and one for the air pollution. The 
 entity-relationship diagram for these tables can be seen in Figure \ref{fig:ERdiagram}. 
@@ -221,11 +233,6 @@ retrieved from the United Health Foundation's report on air pollution across the
  \label{fig:ERdiagram}
 \end{figure}
 
-\section{Implementation of Data Organization}
-We created a relational database with 3 tables to store our data. The "state" table and "year" database are used to
-index values stored within the "air pollution" database, as seen in the ER diagram in Figure \ref{fig:ERdiagram}.
-We implemented the database on the ONID Database Server provided by Oregon State University. The contents
-of the "state" diagram can be seen in Figure \ref{fig:stateDB} and the "air pollution" configuration can be found in Figure \ref{fig:airPoll}.
 
 \begin{figure}
 \centering
@@ -242,7 +249,7 @@ containing all the values of the air pollution for each state and year, and "nam
 \label{fig:airPoll}
 \end{figure}
 
-\section{Design of the Interface}
+\subsection{Design of the Interface}
 
 We represent our data using an interactive tree map on a webpage. On the left hand side, users can select what year 
 they want to view from 2007 to 2016, giving them the ability to see the changes in air pollution over the years. The 
@@ -258,6 +265,56 @@ representing the highest negative change in air pollution. The visualization is 
 \caption{A visualization using a tree map describing the levels of air pollution in the western region by block size.}
 \label{fig:Design}
 \end{figure}
+
+\subsection{Enhancement Over Existing Models}
+
+** Fill in with why our design is better/more helpful than other already existing models - should tie back to Related Works **
+** Idea - whoever writes this section should also be in charge of related work **
+
+\section{Implementation}
+
+\subsection{Data Organization}
+We created a relational database with 3 tables to store our data. The "state" table and "year" database are used to
+index values stored within the "air pollution" database, as seen in the ER diagram in Figure \ref{fig:ERdiagram}.
+We implemented the database on the ONID Database Server provided by Oregon State University. The contents
+of the "state" diagram can be seen in Figure \ref{fig:stateDB} and the "air pollution" configuration can be found in Figure \ref{fig:airPoll}.
+
+\subsection{Website}
+** fill in with how we created website - might need Kat's help here **
+
+\subsection{Issues Encountered}
+** fill in with any issues encountered probably while creating visualization/website - again might need Kat's help here **
+
+\section{Results}
+** intro to what we found **
+
+\subsection{Insights}
+
+** ??? I don't really know what kinds of insights we'd find but we will see I guess **
+
+\subsection{Data Set}
+
+** Yeah we already said this up in Methods so we could just reference that again I guess??? **
+
+\subsection{Dimensions Used}
+
+** Our visualization is both spatial (size of block) and temporal (can show change over time) so I guess talk about that/why we chose that visualization/if it worked or not **
+
+\subsection{Performance}
+
+** no idea here since we're not running any sort of tests on it or doing any user studies lmao **
+
+\subsection{Supplementary Materials}
+** alannah said: link to source code - so I guess here we could link to our github or something **
+
+\section{Conclusion and Future Work}
+
+** some longform paragraph here about our model, why it's awesome, etc. how we would want to change it in the future **
+
+\section{Acknowledgements}
+
+** TO AMBER FROM AMBER: i think the original tex doc he supplied had some special thing for acknowledgements so copy paste**
+** Here we just acknowledge the website we got data from (?) and Eugene and the TAs???? **
 
 
 \end{document}
