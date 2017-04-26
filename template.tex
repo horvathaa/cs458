@@ -1,0 +1,264 @@
+\documentclass[journal]{vgtc}                % final (journal style)
+%\documentclass[review,journal]{vgtc}         % review (journal style)
+%\documentclass[widereview]{vgtc}             % wide-spaced review
+%\documentclass[preprint,journal]{vgtc}       % preprint (journal style)
+
+%% Uncomment one of the lines above depending on where your paper is
+%% in the conference process. ``review'' and ``widereview'' are for review
+%% submission, ``preprint'' is for pre-publication, and the final version
+%% doesn't use a specific qualifier.
+
+%% Please use one of the ``review'' options in combination with the
+%% assigned online id (see below) ONLY if your paper uses a double blind
+%% review process. Some conferences, like IEEE Vis and InfoVis, have NOT
+%% in the past.
+
+%% Please note that the use of figures other than the optional teaser is not permitted on the first page
+%% of the journal version.  Figures should begin on the second page and be
+%% in CMYK or Grey scale format, otherwise, colour shifting may occur
+%% during the printing process.  Papers submitted with figures other than the optional teaser on the
+%% first page will be refused. Also, the teaser figure should only have the
+%% width of the abstract as the template enforces it.
+
+%% These few lines make a distinction between latex and pdflatex calls and they
+%% bring in essential packages for graphics and font handling.
+%% Note that due to the \DeclareGraphicsExtensions{} call it is no longer necessary
+%% to provide the the path and extension of a graphics file:
+%% \includegraphics{diamondrule} is completely sufficient.
+%%
+\ifpdf%                                % if we use pdflatex
+  \pdfoutput=1\relax                   % create PDFs from pdfLaTeX
+  \pdfcompresslevel=9                  % PDF Compression
+  \pdfoptionpdfminorversion=7          % create PDF 1.7
+  \ExecuteOptions{pdftex}
+  \usepackage{graphicx}                % allow us to embed graphics files
+  \DeclareGraphicsExtensions{.pdf,.png,.jpg,.jpeg} % for pdflatex we expect .pdf, .png, or .jpg files
+\else%                                 % else we use pure latex
+  \ExecuteOptions{dvips}
+  \usepackage{graphicx}                % allow us to embed graphics files
+  \DeclareGraphicsExtensions{.eps}     % for pure latex we expect eps files
+\fi%
+
+%% it is recomended to use ``\autoref{sec:bla}'' instead of ``Fig.~\ref{sec:bla}''
+\graphicspath{{figures/}{pictures/}{images/}{./}} % where to search for the images
+
+\usepackage{microtype}                 % use micro-typography (slightly more compact, better to read)
+\PassOptionsToPackage{warn}{textcomp}  % to address font issues with \textrightarrow
+\usepackage{textcomp}                  % use better special symbols
+\usepackage{mathptmx}                  % use matching math font
+\usepackage{times}                     % we use Times as the main font
+\renewcommand*\ttdefault{txtt}         % a nicer typewriter font
+\usepackage{cite}                      % needed to automatically sort the references
+\usepackage{tabu}                      % only used for the table example
+\usepackage{booktabs}                  % only used for the table example
+%% We encourage the use of mathptmx for consistent usage of times font
+%% throughout the proceedings. However, if you encounter conflicts
+%% with other math-related packages, you may want to disable it.
+
+%% In preprint mode you may define your own headline.
+%\preprinttext{To appear in IEEE Transactions on Visualization and Computer Graphics.}
+
+%% If you are submitting a paper to a conference for review with a double
+%% blind reviewing process, please replace the value ``0'' below with your
+%% OnlineID. Otherwise, you may safely leave it at ``0''.
+\onlineid{0}
+
+%% declare the category of your paper, only shown in review mode
+\vgtccategory{Research}
+%% please declare the paper type of your paper to help reviewers, only shown in review mode
+%% choices:
+%% * algorithm/technique
+%% * application/design study
+%% * evaluation
+%% * system
+%% * theory/model
+\vgtcpapertype{please specify}
+
+%% Paper title.
+\title{Assignment 1 - CS 458}
+
+%% This is how authors are specified in the journal style
+
+%% indicate IEEE Member or Student Member in form indicated below
+\author{Amber Horvath, Alannah Oleson, and Katherine Bajno}
+\authorfooter{
+%% insert punctuation at end of each item
+\item
+ Amber Horvath, computer science student at Oregon State University: E-mail: horvatha@oregonstate.edu.
+\item
+ Alannah Oleson, computer science student at Oregon State University. E-mail: olesona@oregonstate.edu.
+\item
+ Katherine Bajno, computer science student at Oregon State University. E-mail: kbajno@oregonstate.edu
+}
+
+%other entries to be set up for journal
+%\shortauthortitle{Firstauthor \MakeLowercase{\textit{et al.}}: Paper Title}
+
+%% Abstract section.
+% end of abstract
+
+%% Keywords that describe your work. Will show as 'Index Terms' in journal
+%% please capitalize first letter and insert punctuation after last keyword
+%\keywords{Radiosity, global illumination, constant time}
+
+%% ACM Computing Classification System (CCS). 
+%% See <http://www.acm.org/class/1998/> for details.
+%% The ``\CCScat'' command takes four arguments.
+
+
+
+%% Uncomment below to include a teaser figure.
+
+
+%% Uncomment below to disable the manuscript note
+\renewcommand{\manuscriptnotetxt}{}
+
+%% Copyright space is enabled by default as required by guidelines.
+%% It is disabled by the 'review' option or via the following command:
+% \nocopyrightspace
+
+\vgtcinsertpkg
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%% START OF THE PAPER %%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%% The ``\maketitle'' command must be the first command after the
+%% ``\begin{document}'' command. It prepares and prints the title block.
+
+%% the only exception to this rule is the \firstsection command
+%\firstsection{Introduction}
+
+\maketitle
+
+\section{Introduction} %for journal use above \firstsection{..} instead
+
+\subsection{What's the problem?}
+Within the last decade, numerous works have surfaced that suggest climate change has detrimental effects on many 
+aspects of the environment. One indicator of climate change in a geographic region is air quality, which is measured 
+in parts per million of particulate matter. Generally, any particulate less than 2.5 microns in diameter meets the 
+standards for “dangerous” particulates. An area that has a high concentration of dangerous particulates - a high 
+number on the air quality index, which corresponds to bad air quality - can be both a symptom of or a catalyst for 
+climate change. Identifying areas in which the air quality is markedly bad or decreasing over time can provide a way 
+to focus climate change studies and environmental science efforts.
+
+\subsection{Why does this problem need a visualization?}
+Though there is much data available on the topic of air quality, very little of it is not simply presented in a table 
+or list. Of the visualizations that do exist, many are simply colored maps that make darker or more saturated colors 
+correspond to worse air qualities. Thus, it can be hard to see just which areas present a problem over time (
+signified by either a continual or sudden, severe decrease in air quality). A visualization that could clearly show 
+both the magnitude of the air quality index and give an indication of how the quality was increasing or decreasing 
+over time would be very useful to researchers in the field.
+
+\subsection{Who are our potential users?}
+Our potential users include researchers and climate change/air quality scientists who study geographic regions in the 
+western US. (We will focus our visualization on this region in order to make the scope appropriate for this project.) 
+This visualization will ideally give scientists a quick overview of air quality trends in an area, which could 
+indicate that the region requires more study or analysis in future work.
+
+
+In addition, we should not forget that the general population might benefit from a good visualization of this data as 
+well. For instance, perhaps a person who has asthma might view the data as part of a decision on whether or not to 
+relocate to a certain state. A citizen activist might also be interested in this data in order to raise awareness in 
+their region about the dangers of poor air quality. Multiple cases such as these exist and might be well served by 
+this visualization.
+
+\subsection{What is our general approach?}
+We will pull data from the American Health Rankings site by the United Health Foundation. We will use this to 
+aggregate data from the air quality measures of 13 western region states over the past 10 years. We then intend to 
+make a 
+series of tree maps that visualize two dimensions of the data: the magnitude of the air pollution levels (represented 
+by the size of the block; larger = worse) and the rate of change in air quality levels (represented by the color of 
+the block; green = decreasing/getting better, red = increasing/getting worse, more saturated = changing faster).
+
+\section{Visualization Tasks}
+
+\begin{itemize}
+\item Our visualization aims to address the following questions:
+  \begin{itemize}
+    \item How fast is the air quality increasing and decreasing in each state?
+    \item What states on the west coast are most at risk of bad air quality?
+    \item What trends in air quality can we identify in air quality on the west coast over the past 10 years?
+    \item Which states can be identified as “danger zones” for further research (air pollution that is quickly increasing)?
+  \end{itemize}
+\end{itemize}
+
+\section{Data Sources}
+We will be pulling data from the United Health Foundation’s website that catalogues data about each state by year. We 
+will be studying 11 different states in the western US. We chose the western United States as the data set was 
+relevant to our team's interest and to keep the project within a manageable scope.
+\begin{itemize}
+\item Washington: 
+http://www.americashealthrankings.org/explore/2015-annual-report/measure/air/state/WA
+\item Oregon: http://www.americashealthrankings.org/explore/2015-annual-report/measure/air/state/OR
+\item California: http://www.americashealthrankings.org/explore/2015-annual-report/measure/air/state/CA
+\item Alaska: http://www.americashealthrankings.org/explore/2015-annual-report/measure/air/state/AK 
+\item Hawaii: http://www.americashealthrankings.org/explore/2015-annual-report/measure/air/state/HI
+\item Montana: http://www.americashealthrankings.org/explore/2015-annual-report/measure/air/state/MT
+\item Wyoming: http://www.americashealthrankings.org/explore/2015-annual-report/measure/air/state/WY
+\item Colorado: http://www.americashealthrankings.org/explore/2015-annual-report/measure/air/state/CO
+\item New Mexico: http://www.americashealthrankings.org/explore/2015-annual-report/measure/air/state/NM
+\item Idaho: http://www.americashealthrankings.org/explore/2015-annual-report/measure/air/state/ID
+\item Utah: http://www.americashealthrankings.org/explore/2015-annual-report/measure/air/state/UT
+\item Arizona: http://www.americashealthrankings.org/explore/2015-annual-report/measure/air/state/AZ
+\item Nevada: http://www.americashealthrankings.org/explore/2015-annual-report/measure/air/state/NV 
+\end{itemize}
+
+
+\section{Data Organization}
+
+We set up our data in the form of 3 tables, 1 for the states, one for the years, and one for the air pollution. The 
+entity-relationship diagram for these tables can be seen in Figure \ref{fig:ERdiagram}. 
+The state name and year are used as keys to index the values stored within the air pollution table. This data was 
+retrieved from the United Health Foundation's report on air pollution across the United States.
+
+\begin{figure}
+ \centering % avoid the use of \begin{center}...\end{center} and use \centering instead (more compact)
+ \includegraphics[width=\columnwidth]{cs458-ER-diagram-ass1}
+ \caption{An ER diagram showing the relationship between our 3 tables: the State table has a primary key "name" and the Year table has a primary key "year", both of which are used to query on the Air Pollution table}
+ \label{fig:ERdiagram}
+\end{figure}
+
+\section{Implementation of Data Organization}
+We created a relational database with 3 tables to store our data. The "state" table and "year" database are used to
+index values stored within the "air pollution" database, as seen in the ER diagram in Figure \ref{fig:ERdiagram}.
+We implemented the database on the ONID Database Server provided by Oregon State University. The contents
+of the "state" diagram can be seen in Figure \ref{fig:stateDB} and the "air pollution" configuration can be found in Figure \ref{fig:airPoll}.
+
+\begin{figure}
+\centering
+\includegraphics[width=\columnwidth]{state_db}
+\caption{A visualization of the contents of the "state" table, with the "name" column serving as the primary key and key to index the "air pollution" table.}
+\label{fig:stateDB}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=\columnwidth]{air_poll_db}
+\caption{The "air pollution" table's columns include "air pollution", "name", and "year" with "air pollution" 
+containing all the values of the air pollution for each state and year, and "name" and "year" serving as keys.}
+\label{fig:airPoll}
+\end{figure}
+
+\section{Design of the Interface}
+
+We represent our data using an interactive tree map on a webpage. On the left hand side, users can select what year 
+they want to view from 2007 to 2016, giving them the ability to see the changes in air pollution over the years. The 
+size of the boxes on the tree map represent how much or how little air pollution there is in a state. The larger the 
+box, the more air pollution exists. The color of the boxes represent the change in air pollution from the previous 
+year to the one selected. The range is from -1 to +1, with -1 representing the highest positive change and the +1 
+representing the highest negative change in air pollution. The visualization is represented in Figure \ref{fig:Design}
+.
+
+\begin{figure}
+\centering
+\includegraphics[width=\columnwidth]{HW1Design}
+\caption{A visualization using a tree map describing the levels of air pollution in the western region by block size.}
+\label{fig:Design}
+\end{figure}
+
+
+\end{document}
+
