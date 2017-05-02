@@ -133,6 +133,8 @@
 
 \maketitle
 
+\abstract{Here is where we put our abstract...}
+
 \section{Introduction} %for journal use above \firstsection{..} instead
 
 \subsection{Problem}
@@ -188,6 +190,16 @@ the block; green = decreasing/getting better, red = increasing/getting worse, mo
 
 \section{Related Work}
 ********** FILL IN WITH PREVIOUS WORK IN THE FIELD OF AIR POLLUTION RESEARCH AND VISUALIZATIONS ***********
+
+- [Zahran et al 2013]: did case study in area with increasing air pollution to test their 3d city model that incorporates different visualizations to represent the air pollution in the city. They tried 3D point shapes, 3D planar surfaces, and 3D volumetric clouds. The clouds worked the best due to the metaphor of them appearing like storm clouds. Benefits of visualizations include teaching the public about raising levels of pollution and possibly influencing traffic schemes to take into account changing pollution levels. Implications for our work: perhaps clouds are useful for visualition however do they accurately convey more or less pollution versus just pollution versus no pollution?
+
+- [Elbir 2004] Created system based on CALPUFF dispersion model - estimates ambient air pollution levels temporally and spatially. Allows for mapping of emissions and air quality levels. Implication for our work: their display is more akin to an atmospheric visualization over an area as opposed to comparing distinct regions within an area so we're tackling different problems.
+
+- [Wang et al 2010] Created viewpoint-based method during rendering, promotes speed and interactivity. Ran experimental tests, believe it can benfit environment monitoring. Can load large data sets and display them quickly. Implications for our work: We're implementing a 2D interface, so perhaps if we moved to a 3D space we could leverage this work, but it's outside of the scope of our implementation efforts.
+
+- [Zell et al 2010] meta study about the topic of air pollution visualization research. Basically stated that there's been a lot of publications recently about air pollution research because it's so critically important to current world affairs. Implication for our work: air pollution is important so our work is important.
+
+- [Li et al 2016] Researchers in China wanted to analyze air pollution trends happening in Beijing. They used open source tools (PivotTable.js and D3.js) to create many different visualizations to visualize spatio-temporal visualizations. They used many different visualizations such as line graphs, area graphs, tables, and so on. Implication for our work: perhaps we can leverage the open source tools they used as both are hosted on Github. Perhaps utilizing some different visualizations along with our square plot will help lead scientists to come to different conclusions based upon our work.
 
 \section{Background}
 ********** FILL IN WITH QUESTIONS WE'RE TRYING TO ANSWER *************
