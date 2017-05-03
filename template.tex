@@ -205,17 +205,48 @@ the block; green = decreasing/getting better, red = increasing/getting worse, mo
 
 
 \section{Related Work}
-********** FILL IN WITH PREVIOUS WORK IN THE FIELD OF AIR POLLUTION RESEARCH AND VISUALIZATIONS ***********
 
-- [Zahran et al 2013]: did case study in area with increasing air pollution to test their 3d city model that incorporates different visualizations to represent the air pollution in the city. They tried 3D point shapes, 3D planar surfaces, and 3D volumetric clouds. The clouds worked the best due to the metaphor of them appearing like storm clouds. Benefits of visualizations include teaching the public about raising levels of pollution and possibly influencing traffic schemes to take into account changing pollution levels. Implications for our work: perhaps clouds are useful for visualition however do they accurately convey more or less pollution versus just pollution versus no pollution?
+Climate change has been studied by many research groups across different domains. However, how groups choose to visualize
+the data changes depending upon the focus of the group and what questions they're trying to answer. The teams software
+capabilities also come in to play, with some groups researching air pollution having little to no background in 
+programming or information visualization. Zell et al. (2010) found that, between the years 1955 and 2006, 
+26,253 different titles were published relating to air pollution from 124 different countries [Zell et al. 2010]. 
 
-- [Elbir 2004] Created system based on CALPUFF dispersion model - estimates ambient air pollution levels temporally and spatially. Allows for mapping of emissions and air quality levels. Implication for our work: their display is more akin to an atmospheric visualization over an area as opposed to comparing distinct regions within an area so we're tackling different problems.
 
-- [Wang et al 2010] Created viewpoint-based method during rendering, promotes speed and interactivity. Ran experimental tests, believe it can benfit environment monitoring. Can load large data sets and display them quickly. Implications for our work: We're implementing a 2D interface, so perhaps if we moved to a 3D space we could leverage this work, but it's outside of the scope of our implementation efforts.
+Judging by this influx of publications, air pollution is clearly an issue that has garned interest from people of all
+backgrounds and interest. Different groups of researchers have attempted to create visualizations that both inform
+experts and the general public while also being used to glean meaningful information about different atmospheric trends.
 
-- [Zell et al 2010] meta study about the topic of air pollution visualization research. Basically stated that there's been a lot of publications recently about air pollution research because it's so critically important to current world affairs. Implication for our work: air pollution is important so our work is important.
+In an effort to inform city planners on how to structure future traffice schemes, Zahran et al. ran a case study
+to test their implementation of a 3D city model with an overlay of the changing air pollution through different types of
+visualizations. Through their different tests, they found that users best understood the metaphor of smog clouds 
+covering the more polluted areas and less clouds over the more clear areas.
+Perhaps an easily understandable metaphor is a good way to inform the public on levels of air pollution - however, how
+to do this on a state by state basis and capture the temporal aspect may not be possible with the cloud metaphor. 
 
-- [Li et al 2016] Researchers in China wanted to analyze air pollution trends happening in Beijing. They used open source tools (PivotTable.js and D3.js) to create many different visualizations to visualize spatio-temporal visualizations. They used many different visualizations such as line graphs, area graphs, tables, and so on. Implication for our work: perhaps we can leverage the open source tools they used as both are hosted on Github. Perhaps utilizing some different visualizations along with our square plot will help lead scientists to come to different conclusions based upon our work.
+Elbir created a system to estimate the ambient air pollution levels temporally and spatially with the goal of mapping
+emissions and air quality levels [Elbir 2004]. 
+The target users are policy makers in order to inform and predict air quality changes within the region they are 
+evaluating. Elbir uses darker markings on a map of the area to show concentration of harmful air pollutants.
+The advantage of Elbir's system is that, not only does it visualize current air pollution, it also predicts future
+pollution levels based upon the data currently available. This might be an avenue of future research for our
+visualization to help citizens of the states we are visualizing to better understand whether their state is at risk or
+to see if it is imporiving over time. 
+
+Wang et al. created a viewpoint-based method for rendering of visualizations that promotes speed and interactivity [Wang 
+et al 2010]. Speed is important as, if the data is consistently being sampled, being able to render and update on the 
+fly leads to the most accurate and relevant information being shared. This type of sampling is important for government
+officials to keep their patrons informed if a certain area is reaching dangerous levels of pollution. The scope of our
+project does not reach that level of criticality, but if we shifted our audience towards government officials, their
+system might be an avenue for implementation efforts.
+
+The kind of work Wang et al. are doing is similar to the work of Li et al. Li et al. aimed to create many different
+visualizations to inform policy makers in Beijing what is causing the rapid increase in air pollution and to analyze
+the trends in order to combat the air pollution [Li et al 2016]. The authors attempted different methods of 
+visualizations and found certain types of visualizations lead to different information being conveyed (e.g. scatter
+plots helped locate where data was missing). The authors also found that wind speed affected change in air pollution.
+These findings suggest our visualization could be improved through supporting different visualizations depending
+upon what question the user is trying to answer through our visualization.
 
 \section{Background}
 ********** FILL IN WITH QUESTIONS WE'RE TRYING TO ANSWER *************
