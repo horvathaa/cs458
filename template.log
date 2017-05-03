@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  19 APR 2017 20:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  2 MAY 2017 16:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -548,7 +548,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 135.
 
-<diamondrule.pdf, id=44, 213.79875pt x 12.045pt>
+<diamondrule.pdf, id=104, 213.79875pt x 12.045pt>
 File: diamondrule.pdf Graphic file (type pdf)
  <use diamondrule.pdf>
 Package pdftex.def Info: diamondrule.pdf used on input line 135.
@@ -564,9 +564,9 @@ LaTeX Font Info:    Try loading font information for TS1+ptm on input line 135.
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 136.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 138.
 LaTeX Font Info:    Font shape `OT1/phv/bx/sc' in size <9> not available
-(Font)              Font shape `OT1/phv/b/sc' tried instead on input line 136.
+(Font)              Font shape `OT1/phv/b/sc' tried instead on input line 138.
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ú in font ptmr7t!
@@ -574,97 +574,109 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 181.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 183.
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ú in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ô in font ptmr7t!
 
-Overfull \hbox (4.74335pt too wide) in paragraph at lines 193--195
-[]\OT1/ptm/m/n/9 (-20) Washington: http://www.americashealthrankings.org/explor
-e/2015-
- []
-
-
-Overfull \hbox (7.78354pt too wide) in paragraph at lines 202--203
-[]\OT1/ptm/m/n/9 (-20) New Mex-ico: http://www.americashealthrankings.org/explo
-re/2015-
- []
-
-
-Underfull \hbox (badness 2662) in paragraph at lines 203--204
-[]\OT1/ptm/m/n/9 (+20) Idaho: http://www.americashealthrankings.org/explore/201
-5-
- []
-
-
-Underfull \hbox (badness 6995) in paragraph at lines 204--205
-[]\OT1/ptm/m/n/9 (+20) Utah: http://www.americashealthrankings.org/explore/2015
--
+Underfull \hbox (badness 2088) in paragraph at lines 192--193
+\OT1/ptm/m/n/9 (+20) OF AIR POL-LU-TION RE-SEARCH AND VI-SU-AL-IZA-TIONS
  []
 
 [1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
- <./diamondrule.pdf>] <cs458-ER-diagram-ass1.png, id=58, 352.31625pt x 103.3862
-5pt>
+ <./diamondrule.pdf>]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+
+Overfull \hbox (4.74335pt too wide) in paragraph at lines 217--219
+[]\OT1/ptm/m/n/9 (-20) Washington: http://www.americashealthrankings.org/explor
+e/2015-
+ []
+
+
+Overfull \hbox (7.78354pt too wide) in paragraph at lines 226--227
+[]\OT1/ptm/m/n/9 (-20) New Mex-ico: http://www.americashealthrankings.org/explo
+re/2015-
+ []
+
+
+Underfull \hbox (badness 2662) in paragraph at lines 227--228
+[]\OT1/ptm/m/n/9 (+20) Idaho: http://www.americashealthrankings.org/explore/201
+5-
+ []
+
+
+Underfull \hbox (badness 6995) in paragraph at lines 228--229
+[]\OT1/ptm/m/n/9 (+20) Utah: http://www.americashealthrankings.org/explore/2015
+-
+ []
+
+<cs458-ER-diagram-ass1.png, id=118, 352.31625pt x 103.38625pt>
 File: cs458-ER-diagram-ass1.png Graphic file (type png)
 
 <use cs458-ER-diagram-ass1.png>
-Package pdftex.def Info: cs458-ER-diagram-ass1.png used on input line 219.
+Package pdftex.def Info: cs458-ER-diagram-ass1.png used on input line 243.
 (pdftex.def)             Requested size: 251.31898pt x 73.74864pt.
 
-<state_db.png, id=63, 419.06563pt x 329.73187pt>
+<state_db.png, id=120, 419.06563pt x 329.73187pt>
 File: state_db.png Graphic file (type png)
  <use state_db.png>
-Package pdftex.def Info: state_db.png used on input line 232.
+Package pdftex.def Info: state_db.png used on input line 251.
 (pdftex.def)             Requested size: 251.31898pt x 197.74504pt.
 
-<air_poll_db.png, id=64, 767.86874pt x 139.52126pt>
+<air_poll_db.png, id=121, 767.86874pt x 139.52126pt>
 File: air_poll_db.png Graphic file (type png)
  <use air_poll_db.png>
-Package pdftex.def Info: air_poll_db.png used on input line 239.
+Package pdftex.def Info: air_poll_db.png used on input line 258.
 (pdftex.def)             Requested size: 251.31898pt x 45.6632pt.
 
-<HW1Design.png, id=66, 869.87485pt x 516.42938pt>
+<HW1Design.png, id=123, 869.87485pt x 516.42938pt>
 File: HW1Design.png Graphic file (type png)
  <use HW1Design.png>
-Package pdftex.def Info: HW1Design.png used on input line 257.
+Package pdftex.def Info: HW1Design.png used on input line 276.
 (pdftex.def)             Requested size: 251.31898pt x 149.20119pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 263.
+
+Underfull \vbox (badness 3724) has occurred while \output is active []
+
  [2 <./cs458-ER-diagram-ass1.png> <./state_db.png> <./air_poll_db.png> <./HW1De
 sign.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 263.
-(./template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 263.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 263.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 332.
+
+[3
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 332.
+ (./template.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 332.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 332.
 Package rerunfilecheck Info: File `template.out' has not changed.
-(rerunfilecheck)             Checksum: 4621C4E82DDEBC5A077EAF8492DEA3C5;628.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 263.
+(rerunfilecheck)             Checksum: B4C52E080962FE351DFF8F128487FDB2;1444.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 332.
  ) 
 Here is how much of TeX's memory you used:
- 8429 strings out of 493014
- 129223 string characters out of 6133351
- 250270 words of memory out of 5000000
- 11711 multiletter control sequences out of 15000+600000
- 39192 words of font info for 151 fonts, out of 8000000 for 9000
+ 8481 strings out of 493014
+ 129807 string characters out of 6133351
+ 251271 words of memory out of 5000000
+ 11726 multiletter control sequences out of 15000+600000
+ 40025 words of font info for 165 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 33i,7n,38p,335b,324s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 33i,7n,38p,710b,324s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2016/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/
 2016/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2016/te
 xmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-dist/f
 onts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1
 /urw/times/utmri8a.pfb>
-Output written on template.pdf (2 pages, 2703357 bytes).
+Output written on template.pdf (3 pages, 2711855 bytes).
 PDF statistics:
- 103 PDF objects out of 1000 (max. 8388607)
- 84 compressed objects within 1 object stream
- 17 named destinations out of 1000 (max. 500000)
- 39018 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 171 PDF objects out of 1000 (max. 8388607)
+ 150 compressed objects within 2 object streams
+ 33 named destinations out of 1000 (max. 500000)
+ 39138 words of extra memory for PDF output out of 42996 (max. 10000000)
 
