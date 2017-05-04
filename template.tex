@@ -219,7 +219,7 @@ experts and the general public while also being used to glean meaningful informa
 
 In an effort to inform city planners on how to structure future traffice schemes, Zahran et al. ran a case study
 to test their implementation of a 3D city model with an overlay of the changing air pollution through different types of
-visualizations. Through their different tests, they found that users best understood the metaphor of smog clouds 
+visualizations[Zahran et al.]. Through their different tests, they found that users best understood the metaphor of smog clouds 
 covering the more polluted areas and less clouds over the more clear areas.
 Perhaps an easily understandable metaphor is a good way to inform the public on levels of air pollution - however, how
 to do this on a state by state basis and capture the temporal aspect may not be possible with the cloud metaphor. 
@@ -249,13 +249,15 @@ These findings suggest our visualization could be improved through supporting di
 upon what question the user is trying to answer through our visualization.
 
 \section{Background}
-Amb
+After doing a review of previous literature, we found most previous reseach was aimed at informing policy makers
+and other officials of the state of their local air pollution rates. These visualizations, while similar to our work,
+differ slightly in that they are made by experts for experts. In our case, we are seeking to inform the greater public
+on a more general level of how their state is doing in comparison to other states and whether their state's air pollution
+is increasing or decreasing. Our goal is to provide an easy to understand visualization for non-experts to track their
+state's pollution levels.
 
 \section{Methods}
 \subsection{Data Sources}
-**note: should probably just move all these links to citations and just summarize here
-**double note: also need to add eastern region states
-
 
 We will be pulling data from the United Health Foundation’s website that catalogues data about each state by year. We 
 will be studying 11 different states in the western US. We chose the western United States as the data set was 
@@ -296,7 +298,8 @@ retrieved from the United Health Foundation's report on air pollution across the
 \begin{figure}
 \centering
 \includegraphics[width=\columnwidth]{state_db}
-\caption{A visualization of the contents of the "state" table, with the "name" column serving as the primary key and key to index the "air pollution" table.}
+\caption{A visualization of the contents of the "state" table, with the "name" column serving as the primary key and key 
+to index the "air pollution" table.}
 \label{fig:stateDB}
 \end{figure}
 
@@ -315,8 +318,7 @@ they want to view from 2007 to 2016, giving them the ability to see the changes 
 size of the boxes on the tree map represent how much or how little air pollution there is in a state. The larger the 
 box, the more air pollution exists. The color of the boxes represent the change in air pollution from the previous 
 year to the one selected. The range is from -1 to +1, with -1 representing the highest positive change and the +1 
-representing the highest negative change in air pollution. The visualization is represented in Figure \ref{fig:Design}
-.
+representing the highest negative change in air pollution. The visualization is represented in Figure \ref{fig:Design}.
 
 \begin{figure}
 \centering
@@ -327,7 +329,14 @@ representing the highest negative change in air pollution. The visualization is 
 
 \subsection{Enhancement Over Existing Models}
 
-Amb
+After reviewing the current models available, our model provides an enhancement by providing an easy-to-understand
+metaphor for non-experts to view how their state's air pollution is changing over time. We achieve this through size
+and color changing to represent whether the air pollution levels are rising or lowering over time. For example, a large
+orange** block means that a state's air pollution is rapidly increasing.
+
+Previous models require an understanding of atmospheric sciences and are designed in mind for policy makers in the domain
+of city planning[Zahran et al.]. While users with more experience in the domain of atmospheric sciences may use our
+software, we hope to create a visualization that is accessible to users of all backgrounds.
 
 \section{Implementation}
 
@@ -335,7 +344,8 @@ Amb
 We created a relational database with 3 tables to store our data. The "state" table and "year" database are used to
 index values stored within the "air pollution" database, as seen in the ER diagram in Figure \ref{fig:ERdiagram}.
 We implemented the database on the ONID Database Server provided by Oregon State University. The contents
-of the "state" diagram can be seen in Figure \ref{fig:stateDB} and the "air pollution" configuration can be found in Figure \ref{fig:airPoll}.
+of the "state" diagram can be seen in Figure \ref{fig:stateDB} and the "air pollution" configuration can be found in 
+Figure \ref{fig:airPoll}.
 
 \subsection{Website}
 Alannah
@@ -356,7 +366,8 @@ Alannah
 
 \subsection{Dimensions Used}
 
-** Our visualization is both spatial (size of block) and temporal (can show change over time) so I guess talk about that/why we chose that visualization/if it worked or not **
+** Our visualization is both spatial (size of block) and temporal (can show change over time) so I guess talk about that/
+why we chose that visualization/if it worked or not **
 
 \subsection{Performance}
 
