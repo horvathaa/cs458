@@ -214,12 +214,16 @@ programming or information visualization. Zell et al. (2010) found that, between
 
 
 Judging by this influx of publications, air pollution is clearly an issue that has garned interest from people of all
-backgrounds and interest. Different groups of researchers have attempted to create visualizations that both inform
+backgrounds and interest. It is also important to note that humans play a large role in air pollution, with
+NASA releasing satellite visualizations of our impact on air quality [NASA]. Air pollution is also extremely dangerous,
+with an estimated 2.4 million fatalities occurring each year due to unsafe living conditions caused by air pollution[WHO].
+Different groups of researchers have attempted to create visualizations that both inform
 experts and the general public while also being used to glean meaningful information about different atmospheric trends.
 
 In an effort to inform city planners on how to structure future traffice schemes, Zahran et al. ran a case study
 to test their implementation of a 3D city model with an overlay of the changing air pollution through different types of
-visualizations[Zahran et al.]. Through their different tests, they found that users best understood the metaphor of smog clouds 
+visualizations[Zahran et al.]. 
+Through their different tests, they found that users best understood the metaphor of smog clouds 
 covering the more polluted areas and less clouds over the more clear areas.
 Perhaps an easily understandable metaphor is a good way to inform the public on levels of air pollution - however, how
 to do this on a state by state basis and capture the temporal aspect may not be possible with the cloud metaphor. 
@@ -245,10 +249,27 @@ visualizations to inform policy makers in Beijing what is causing the rapid incr
 the trends in order to combat the air pollution [Li et al 2016]. The authors attempted different methods of 
 visualizations and found certain types of visualizations lead to different information being conveyed (e.g. scatter
 plots helped locate where data was missing). The authors also found that wind speed affected change in air pollution.
+Li et al. also leveraged some open source software in order to create their visualization. One such open source software is
+Openair, an R software package used to visual air quality [Openair].
 These findings suggest our visualization could be improved through supporting different visualizations depending
-upon what question the user is trying to answer through our visualization.
+upon what question the user is trying to answer through our visualization. For future work, we might also consider
+leveraging some of these open source software options in order to keep our product flexible and receptive to incoming
+data.
 
-** add 4 more
+Another different type of visualization researchers have tried is Bi et al.'s tree visualization [Bi et al.]. The tree is
+used to represent different polutant levels for each day throughout a month in a given area. This metaphor allows for
+a high level of accuracy, but does not provide a broader scale view or allow for easy comparison between different regions.
+
+Beyond purely visualizations but in the vein of informing the public, 
+Bohler et al. developed a system called APNEE (Air Pollution Network for Early warning and online information Exchange in
+ Europe) as a ways of informing select citizens through mobile messages, online posts, and street panels when air pollution
+ reaches certain critical levels [Bohler et al.]. 
+ Perhaps if we leveraged our software beyond merely a visualization and created an app, we
+ could also distribute our information to patrons. For now, that is outside of the scope of our assignment, and wouldn't
+ make a lot of sense unless we had more frequent updates on climate change (currently our system functions on a year-long
+ comparison level).
+
+
 
 \section{Background}
 After doing a review of previous literature, we found most previous reseach was aimed at informing policy makers

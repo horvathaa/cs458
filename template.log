@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  4 MAY 2017 00:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  4 MAY 2017 20:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -591,25 +591,25 @@ Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
 
-Overfull \hbox (4.74335pt too wide) in paragraph at lines 266--268
+Overfull \hbox (4.74335pt too wide) in paragraph at lines 289--291
 []\OT1/ptm/m/n/9 (-20) Washington: http://www.americashealthrankings.org/explor
 e/2015-
  []
 
 
-Overfull \hbox (7.78354pt too wide) in paragraph at lines 275--276
+Overfull \hbox (7.78354pt too wide) in paragraph at lines 298--299
 []\OT1/ptm/m/n/9 (-20) New Mex-ico: http://www.americashealthrankings.org/explo
 re/2015-
  []
 
 
-Underfull \hbox (badness 2662) in paragraph at lines 276--277
+Underfull \hbox (badness 2662) in paragraph at lines 299--300
 []\OT1/ptm/m/n/9 (+20) Idaho: http://www.americashealthrankings.org/explore/201
 5-
  []
 
 
-Underfull \hbox (badness 6995) in paragraph at lines 277--278
+Underfull \hbox (badness 6995) in paragraph at lines 300--301
 []\OT1/ptm/m/n/9 (+20) Utah: http://www.americashealthrankings.org/explore/2015
 -
  []
@@ -618,52 +618,54 @@ Underfull \hbox (badness 6995) in paragraph at lines 277--278
 File: cs458-ER-diagram-ass1.png Graphic file (type png)
 
 <use cs458-ER-diagram-ass1.png>
-Package pdftex.def Info: cs458-ER-diagram-ass1.png used on input line 292.
+Package pdftex.def Info: cs458-ER-diagram-ass1.png used on input line 315.
 (pdftex.def)             Requested size: 251.31898pt x 73.74864pt.
 
 <state_db.png, id=124, 419.06563pt x 329.73187pt>
 File: state_db.png Graphic file (type png)
  <use state_db.png>
-Package pdftex.def Info: state_db.png used on input line 300.
+Package pdftex.def Info: state_db.png used on input line 323.
 (pdftex.def)             Requested size: 251.31898pt x 197.74504pt.
 
 <air_poll_db.png, id=125, 767.86874pt x 139.52126pt>
 File: air_poll_db.png Graphic file (type png)
  <use air_poll_db.png>
-Package pdftex.def Info: air_poll_db.png used on input line 308.
+Package pdftex.def Info: air_poll_db.png used on input line 331.
 (pdftex.def)             Requested size: 251.31898pt x 45.6632pt.
 
 <HW1Design.png, id=127, 869.87485pt x 516.42938pt>
 File: HW1Design.png Graphic file (type png)
  <use HW1Design.png>
-Package pdftex.def Info: HW1Design.png used on input line 325.
+Package pdftex.def Info: HW1Design.png used on input line 348.
 (pdftex.def)             Requested size: 251.31898pt x 149.20119pt.
- [2 <./cs458-ER-diagram-ass1.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 390.
- [3 <./state_db.png> <./air_poll_db.png> <./HW1Design.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 390.
+ [2]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 413.
+
+[3 <./cs458-ER-diagram-ass1.png> <./state_db.png> <./air_poll_db.png> <./HW1Des
+ign.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 413.
  (./template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 390.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 390.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 413.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 413.
 Package rerunfilecheck Info: File `template.out' has not changed.
 (rerunfilecheck)             Checksum: 69C9D6AB43E35B9FC58A58D5221ADAEB;1506.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 390.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 413.
  ) 
 Here is how much of TeX's memory you used:
- 8508 strings out of 493014
- 130062 string characters out of 6133351
- 252700 words of memory out of 5000000
+ 8511 strings out of 493014
+ 130092 string characters out of 6133351
+ 254700 words of memory out of 5000000
  11730 multiletter control sequences out of 15000+600000
- 42449 words of font info for 181 fonts, out of 8000000 for 9000
+ 42568 words of font info for 183 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 33i,7n,38p,335b,322s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 33i,7n,38p,335b,321s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2016/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/
 2016/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2016/te
 xmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-dist/f
 onts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1
 /urw/times/utmri8a.pfb>
-Output written on template.pdf (3 pages, 2714769 bytes).
+Output written on template.pdf (3 pages, 2718607 bytes).
 PDF statistics:
  175 PDF objects out of 1000 (max. 8388607)
  154 compressed objects within 2 object streams

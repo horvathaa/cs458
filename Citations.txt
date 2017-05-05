@@ -1,0 +1,7 @@
+Citations
+
+Carslaw, D.C.; Ropkins, K. Openair—An R package for air quality data analysis. Environ. Model. Softw. 2012, 27–28, 52–61.
+
+
+The Top 10 Causes of Death - WHO Fact Sheet No. 310 [http://
+www.who.int/mediacentre/factsheets/fs310/en/index.html]
