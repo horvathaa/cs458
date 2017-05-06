@@ -284,7 +284,9 @@ state's pollution levels.
 
 We will be pulling data from the United Health Foundation’s website that catalogues data about each state by year. We 
 will be studying 11 different states in the western US. We chose the western United States as the data set was 
-relevant to our team's interest and to keep the project within a manageable scope.
+relevant to our team's interest and to keep the project within a manageable scope. In addition, since we all live in the
+western US, this topic was of particular interest to our team: many of us intend to live and work in the Pacific 
+Northwest. Therefore, we can use our visualization to help us determine what states we could end up in.
 \begin{itemize}
 \item Washington: 
 http://www.americashealthrankings.org/explore/2015-annual-report/measure/air/state/WA
@@ -305,10 +307,14 @@ http://www.americashealthrankings.org/explore/2015-annual-report/measure/air/sta
 
 \subsection{Data Organization}
 
-We set up our data in the form of 3 tables, 1 for the states, one for the years, and one for the air pollution. The 
+We set up our data in the form of 3 tables: 1 for the states, one for the years, and one for the air pollution. The 
 entity-relationship diagram for these tables can be seen in Figure \ref{fig:ERdiagram}. 
 The state name and year are used as keys to index the values stored within the air pollution table. This data was 
 retrieved from the United Health Foundation's report on air pollution across the United States.
+
+This database was hosted on Oregon State University's ONID database service during early testing. For ease of development,
+we later moved to to Amazon Web Service databases. This allowed us to better leverage external JavaScript libraries
+when developing the interface.
 
 \begin{figure}
  \centering % avoid the use of \begin{center}...\end{center} and use \centering instead (more compact)
@@ -338,10 +344,13 @@ containing all the values of the air pollution for each state and year, and "nam
 
 We represent our data using an interactive tree map on a webpage. On the left hand side, users can select what year 
 they want to view from 2007 to 2016, giving them the ability to see the changes in air pollution over the years. The 
-size of the boxes on the tree map represent how much or how little air pollution there is in a state. The larger the 
-box, the more air pollution exists. The color of the boxes represent the change in air pollution from the previous 
-year to the one selected. The range is from -1 to +1, with -1 representing the highest positive change and the +1 
-representing the highest negative change in air pollution. The visualization is represented in Figure \ref{fig:Design}.
+size of the boxes on the tree map represent the magnitude of air pollution in a state in parts per million of harmful particulate matter. The larger the 
+box, the higher the level of air pollution. The color of each box represents the change in air pollution levels from the previous 
+year to the one selected. There will also be a scale above the treemap indicating what the range of the changes are for that year. 
+A more negative number represents a higer decrease in harmful particulate levels - that is, a negative number means
+that the state's air quality improved since the last measurement. On the other hand, a positive number represents an increase in harmful
+particulate matter - and thus a decrease in air quality. The saturation of each box's color will serve as an indicator for the state's 
+air quality. Our initial design for the visualization is represented in Figure \ref{fig:Design}.
 
 \begin{figure}
 \centering
