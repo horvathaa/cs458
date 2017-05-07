@@ -169,7 +169,8 @@ or list. Of the visualizations that do exist, many are simply colored maps that 
 correspond to worse air qualities. Thus, it can be hard to see just which areas present a problem over time (
 signified by either a continual or sudden, severe decrease in air quality). A visualization that could clearly show 
 both the magnitude of the air quality index and give an indication of how the quality was increasing or decreasing 
-over time would be very useful to researchers in the field.
+over time would be very useful to researchers in the field and those who want to see a simple version of the data
+to quickly grasp the concepts.
 
 \subsection{Potential Users}
 Our potential users include researchers and climate change/air quality scientists who study geographic regions in the 
@@ -181,7 +182,7 @@ In addition, we should not forget that the general population might benefit from
 well. For instance, perhaps a person who has asthma might view the data as part of a decision on whether or not to 
 relocate to a certain state. A citizen activist might also be interested in this data in order to raise awareness in 
 their region about the dangers of poor air quality. Multiple cases such as these exist and might be well served by 
-this visualization.
+this visualization. We will focus on this demographic when developing our visualization.
 
 \subsection{General Approach}
 We will pull data from the American Health Rankings site by the United Health Foundation. We will use this to 
@@ -189,7 +190,7 @@ aggregate data from the air quality measures of 13 western region states over th
 make a 
 series of tree maps that visualize two dimensions of the data: the magnitude of the air pollution levels (represented 
 by the size of the block; larger = worse) and the rate of change in air quality levels (represented by the color of 
-the block; green = decreasing/getting better, red = increasing/getting worse, more saturated = changing faster).
+the block; blue = decreasing/getting better, orange = increasing/getting worse, more saturated = changing faster).
 
 \section{Visualization Tasks}
 
@@ -486,19 +487,28 @@ years of the visualization - indicating that Alaska might soon become a low air 
 a move to Montana - the rural state had a consistently low level of air pollution (though never the actual least), and was almost always
 colored blue, which indicates a steady increase in air quality.
 
-
 \subsection{Data Set}
 
-** Yeah we already said this up in Methods so we could just reference that again I guess??? **
+As mentioned in the Methods section, we sed ten years' worth of air pollution data from the United Health Foundation's
+website on the topic. See that section for a more detailed description of how we obtained the data. 
+This gave us a set consisting of 110 data points (11 states x 10 years) that we leveraged to build our visualizaton. 
 
 \subsection{Dimensions Used}
 
-** Our visualization is both spatial (size of block) and temporal (can show change over time) so I guess talk about that/
-why we chose that visualization/if it worked or not **
+Our visualization models two dimensions of the data. First, it maps the magnitude of a state's pollution levels to 
+the spatial domain using the size of the block in the treemap. A larger block corresponds to higher levels of pollution, 
+while a smaller block means lower pollution levels. In a way, the spatial dimensions of each block can be though of as 
+"how big" the state's contribution is to the overally level of air pollution in the Western US.
+
+Second, we represent the temporal dimension of the data (over a span of 10 years) through the relative, changing colors of each block
+in the treemap. When viewing a given year's treemap, the color of the blocks indicates the change in air pollution levels 
+from the previous year. This gives a sense of time to the data and firmly grounds our model in the temporal domain. Without
+this dimension, it would be much harder to find interesting trends over time - we would have no mechanism to compare 
+across years.
 
 \subsection{Performance}
 
-Our visualization perfromed well in its intended task. It gave an effecient and effective overview of air quality in this 
+Our visualization performed well in its intended task. It gave an effecient and effective overview of air quality in this 
 region of the country and allowed not only the identification of certain "problem" states that had persistently bad
 air quality, but also the states that would be more likely to maintain their good air quality in the future.
 
