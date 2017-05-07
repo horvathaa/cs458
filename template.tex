@@ -318,7 +318,7 @@ when developing the interface.
 
 \begin{figure}
  \centering % avoid the use of \begin{center}...\end{center} and use \centering instead (more compact)
- \includegraphics[width=\columnwidth]{cs458-ER-diagram-ass1}
+ \includegraphics[width=\columnwidth]{cs458-ER-diagram-ass1.png}
  \caption{An ER diagram showing the relationship between our 3 tables: the State table has a primary key "name" and the Year table has a primary key "year", both of which are used to query on the Air Pollution table}
  \label{fig:ERdiagram}
 \end{figure}
@@ -326,7 +326,7 @@ when developing the interface.
 
 \begin{figure}
 \centering
-\includegraphics[width=\columnwidth]{state_db}
+\includegraphics[width=\columnwidth]{state_db.png}
 \caption{A visualization of the contents of the "state" table, with the "name" column serving as the primary key and key 
 to index the "air pollution" table.}
 \label{fig:stateDB}
@@ -334,13 +334,20 @@ to index the "air pollution" table.}
 
 \begin{figure}
 \centering
-\includegraphics[width=\columnwidth]{air_poll_db}
+\includegraphics[width=\columnwidth]{air_poll_db.png}
 \caption{The "air pollution" table's columns include "air pollution", "name", and "year" with "air pollution" 
 containing all the values of the air pollution for each state and year, and "name" and "year" serving as keys.}
 \label{fig:airPoll}
 \end{figure}
 
 \subsection{Design of the Interface}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=\columnwidth]{HW1Design.PNG}
+\caption{Our initial design for a visualization using a tree map describing the levels of air pollution in the western region by block size. See the text for more description.}
+\label{fig:Design}
+\end{figure}
 
 We represent our data using an interactive tree map on a webpage. On the left hand side, users can select what year 
 they want to view from 2007 to 2016, giving them the ability to see the changes in air pollution over the years. The 
@@ -351,13 +358,6 @@ A more negative number represents a higer decrease in harmful particulate levels
 that the state's air quality improved since the last measurement. On the other hand, a positive number represents an increase in harmful
 particulate matter - and thus a decrease in air quality. The saturation of each box's color will serve as an indicator for the state's 
 air quality. Our initial design for the visualization is represented in Figure \ref{fig:Design}.
-
-\begin{figure}
-\centering
-\includegraphics[width=\columnwidth]{HW1Design}
-\caption{A visualization using a tree map describing the levels of air pollution in the western region by block size.}
-\label{fig:Design}
-\end{figure}
 
 \subsection{Enhancement Over Existing Models}
 
@@ -380,9 +380,32 @@ of the "state" diagram can be seen in Figure \ref{fig:stateDB} and the "air poll
 Figure \ref{fig:airPoll}.
 
 \subsection{Website}
-Alannah
+
+\begin{figure}[h!]
+   \includegraphics[width=\columnwidth]{2013_viz.png}
+   \caption{A screenshot from our implemented website visualizing air pollution levels in the Western US. The user can select which year's data they
+   would like to view using the dropdown menu. \label{fig:screenshot_all}}
+\end{figure}
+
+
+To implement our design, we decided to create a webpage that would display the data and provide ways for the user to
+interact with the visualization. A screenshot of this website can be seen in Figure \ref{fig:screenshot_all}.
+This website is live, and can be viewed and interacted with at the following link:
+\url{http://infovizhw2.s3-website-us-west-2.amazonaws.com/}.
+
+As mentioned before, we used Amazon Web Services to host our website and our database of information. This allowed us to
+use the Google Charts library as a framework for our treemap. We leveraged the Charts API to build our treemap, querying our
+database on page load and then feeding the resulting data into the JSON treemap object. Since we had ten years' worth of data to
+visualise, we decided to create each year's treemap on an "as needed" basis - that is, we create the 2007 (default) treemap when the
+page is initially loaded, then create each subsequent year's treemap as the user selects each year from the dropdown menu.
+This allowed us to optimize the initial loading speed of the page - since it only has to render one treemap on load, instead
+ten, the page shows up much faster.
 
 \subsection{Issues Encountered}
+**colorblindness
+**issues with DB on ONID
+**colors on initial year 2007
+
 Alannah
 
 \section{Results}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.3.16)  5 MAY 2017 19:01
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.3.16)  7 MAY 2017 09:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -378,7 +378,7 @@ Package hyperref Info: Option `breaklinks' set `true' on input line 139.
 Package hyperref Info: Option `colorlinks' set `false' on input line 139.
 Package hyperref Info: Option `nesting' set `true' on input line 139.
 Package hyperref Info: Option `linktocpage' set `true' on input line 139.
-No file template.aux.
+(./template.aux)
 \openout1 = `template.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 145.
@@ -396,7 +396,7 @@ LaTeX Font Info:    ... okay on input line 145.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 145.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 145.
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 145.
@@ -464,6 +464,8 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 145.
 LaTeX Info: Redefining \pageref on input line 145.
 LaTeX Info: Redefining \nameref on input line 145.
+
+(./template.out) (./template.out)
 \@outlinefile=\write3
 \openout3 = `template.out'.
 
@@ -514,7 +516,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <8> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 154.
 
-<diamondrule.pdf, id=4, 213.79875pt x 12.045pt>
+<diamondrule.pdf, id=108, 213.79875pt x 12.045pt>
 File: diamondrule.pdf Graphic file (type pdf)
  <use diamondrule.pdf>
 Package pdftex.def Info: diamondrule.pdf used on input line 154.
@@ -578,97 +580,84 @@ Underfull \hbox (badness 6995) in paragraph at lines 302--303
 -
  []
 
-
-LaTeX Warning: Reference `fig:ERdiagram' on page 2 undefined on input line 311.
-
-
-<cs458-ER-diagram-ass1.png, id=24, 352.31625pt x 103.38625pt>
+<cs458-ER-diagram-ass1.png, id=122, 352.31625pt x 103.38625pt>
 File: cs458-ER-diagram-ass1.png Graphic file (type png)
 
 <use cs458-ER-diagram-ass1.png>
 Package pdftex.def Info: cs458-ER-diagram-ass1.png used on input line 321.
 (pdftex.def)             Requested size: 251.31898pt x 73.74864pt.
 
-<state_db.png, id=26, 419.06563pt x 329.73187pt>
+<state_db.png, id=124, 419.06563pt x 329.73187pt>
 File: state_db.png Graphic file (type png)
  <use state_db.png>
 Package pdftex.def Info: state_db.png used on input line 329.
 (pdftex.def)             Requested size: 251.31898pt x 197.74504pt.
 
-<air_poll_db.png, id=27, 767.86874pt x 139.52126pt>
+<air_poll_db.png, id=125, 767.86874pt x 139.52126pt>
 File: air_poll_db.png Graphic file (type png)
  <use air_poll_db.png>
 Package pdftex.def Info: air_poll_db.png used on input line 337.
 (pdftex.def)             Requested size: 251.31898pt x 45.6632pt.
 
-
-LaTeX Warning: Reference `fig:Design' on page 2 undefined on input line 353.
-
-[2]
-
-! LaTeX Error: File `HW1Design' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.357 ...degraphics[width=\columnwidth]{HW1Design}
-                                                  
-? 
-
-LaTeX Warning: Reference `fig:ERdiagram' on page 3 undefined on input line 377.
+<HW1Design.PNG, id=126, 869.87485pt x 516.42938pt>
+File: HW1Design.PNG Graphic file (type png)
+ <use HW1Design.PNG>
+Package pdftex.def Info: HW1Design.PNG used on input line 347.
+(pdftex.def)             Requested size: 251.31898pt x 149.20119pt.
 
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-LaTeX Warning: Reference `fig:stateDB' on page 3 undefined on input line 379.
-
-
-LaTeX Warning: Reference `fig:airPoll' on page 3 undefined on input line 380.
-
-[3 <./cs458-ER-diagram-ass1.png> <./state_db.png> <./air_poll_db.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 422.
- [4
-
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 422.
-
-(./template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 422.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 422.
+[2] <2013_viz.png, id=136, 1041.8925pt x 599.23875pt>
+File: 2013_viz.png Graphic file (type png)
+ <use 2013_viz.png>
+Package pdftex.def Info: 2013_viz.png used on input line 385.
+(pdftex.def)             Requested size: 251.31898pt x 144.54259pt.
 
 
-Package rerunfilecheck Warning: File `template.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-Package rerunfilecheck Info: Checksums for `template.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  69C9D6AB43E35B9FC58A58D5221ADAEB;1506.
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 422.
+LaTeX Font Info:    Try loading font information for OT1+txtt on input line 394
+.
+(/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txtt.fd
+File: ot1txtt.fd 2000/12/15 v3.1
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `txtt' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 394.
+ [3 <./cs458-ER-diagram-ass1.png> <./state_db.png> <./air_poll_db.png> <./HW1De
+sign.PNG>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 445.
+ [4 <./2013_viz.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 445.
+ (./template.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 445.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 445.
+Package rerunfilecheck Info: File `template.out' has not changed.
+(rerunfilecheck)             Checksum: 98D6B1EAE2E57327A914D548AD4C65E1;1506.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 445.
  ) 
 Here is how much of TeX's memory you used:
- 7687 strings out of 495063
- 117326 string characters out of 3182201
- 231724 words of memory out of 3000000
- 10559 multiletter control sequences out of 15000+200000
- 42568 words of font info for 183 fonts, out of 3000000 for 9000
+ 7799 strings out of 495063
+ 119056 string characters out of 3182201
+ 232848 words of memory out of 3000000
+ 10648 multiletter control sequences out of 15000+200000
+ 48311 words of font info for 203 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  33i,7n,35p,335b,324s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr
-8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on template.pdf (4 pages, 214892 bytes).
+e/texmf-dist/fonts/type1/public/txfonts/txtt.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
+tmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on template.pdf (4 pages, 2764171 bytes).
 PDF statistics:
- 92 PDF objects out of 1000 (max. 8388607)
- 73 compressed objects within 1 object stream
- 35 named destinations out of 1000 (max. 500000)
- 39445 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 189 PDF objects out of 1000 (max. 8388607)
+ 164 compressed objects within 2 object streams
+ 36 named destinations out of 1000 (max. 500000)
+ 45807 words of extra memory for PDF output out of 51595 (max. 10000000)
 
