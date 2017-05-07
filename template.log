@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.3.16)  7 MAY 2017 16:29
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.3.16)  7 MAY 2017 16:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -619,7 +619,7 @@ File: screenshot_hover.jpg Graphic file (type jpg)
 <use screenshot_hover.jpg>
 Package pdftex.def Info: screenshot_hover.jpg used on input line 392.
 (pdftex.def)             Requested size: 251.31898pt x 148.76805pt.
-LaTeX Font Info:    Try loading font information for OT1+txtt on input line 403
+LaTeX Font Info:    Try loading font information for OT1+txtt on input line 404
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txtt.fd
@@ -630,76 +630,69 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 403.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 404.
  [3 <./cs458-ER-diagram-ass1.png> <./state_db.png> <./air_poll_db.png> <./HW1De
 sign.PNG>] [4 <./2013_viz.png> <./screenshot_hover.jpg>]
-
-LaTeX Warning: Reference `2012_viz' on page 5 undefined on input line 464.
-
-<2011_viz.png, id=164, 1008.01593pt x 599.99156pt>
+<2011_viz.png, id=165, 1008.01593pt x 599.99156pt>
 File: 2011_viz.png Graphic file (type png)
  <use 2011_viz.png>
-Package pdftex.def Info: 2011_viz.png used on input line 467.
+Package pdftex.def Info: 2011_viz.png used on input line 468.
 (pdftex.def)             Requested size: 251.31898pt x 149.58554pt.
 
-<2012_viz.png, id=165, 1000.48781pt x 601.4972pt>
+<2012_viz.png, id=166, 1000.48781pt x 601.4972pt>
 File: 2012_viz.png Graphic file (type png)
  <use 2012_viz.png>
-Package pdftex.def Info: 2012_viz.png used on input line 473.
+Package pdftex.def Info: 2012_viz.png used on input line 474.
 (pdftex.def)             Requested size: 251.31898pt x 151.08981pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 530--531
+Underfull \hbox (badness 10000) in paragraph at lines 531--532
 []\OT1/ptm/m/n/9 (+20) Visualization repos-i-tory: []$\OT1/txtt/m/n/9 https : /
  / github . com / kbajno /
  []
 
 
-Underfull \hbox (badness 7740) in paragraph at lines 532--534
+Underfull \hbox (badness 7740) in paragraph at lines 533--535
 []\OT1/ptm/m/n/9 (+20) The vi-su-al-iza-tion web-site it-self can be viewed and
  in-
  []
 
 
-Underfull \hbox (badness 1325) in paragraph at lines 532--534
+Underfull \hbox (badness 1325) in paragraph at lines 533--535
 \OT1/ptm/m/n/9 (+20) ter-acted with at []$\OT1/txtt/m/n/9 http : / / infovizhw2
  . s3-[]website-[]us-[]west-[]2 .
  []
 
 [5 <./2011_viz.png> <./2012_viz.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 576.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 577.
  [6
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 576.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 577.
  (./template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 576.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 576.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 577.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 577.
 Package rerunfilecheck Info: File `template.out' has not changed.
 (rerunfilecheck)             Checksum: A3A82D34AB9017408EE7068554BB6829;1542.
-
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 576.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 577.
  ) 
 Here is how much of TeX's memory you used:
- 7845 strings out of 495063
- 119616 string characters out of 3182201
- 231881 words of memory out of 3000000
- 10664 multiletter control sequences out of 15000+200000
+ 7844 strings out of 495063
+ 119606 string characters out of 3182201
+ 231935 words of memory out of 3000000
+ 10663 multiletter control sequences out of 15000+200000
  49138 words of font info for 217 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 33i,7n,35p,660b,347s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 33i,7n,35p,714b,347s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/txtt.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
 tmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on template.pdf (6 pages, 2961545 bytes).
+Output written on template.pdf (6 pages, 2956991 bytes).
 PDF statistics:
- 217 PDF objects out of 1000 (max. 8388607)
- 185 compressed objects within 2 object streams
+ 218 PDF objects out of 1000 (max. 8388607)
+ 186 compressed objects within 2 object streams
  41 named destinations out of 1000 (max. 500000)
  45822 words of extra memory for PDF output out of 51595 (max. 10000000)
 

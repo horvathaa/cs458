@@ -208,16 +208,16 @@ the block; blue = decreasing/getting better, orange = increasing/getting worse, 
 \section{Related Work}
 
 Climate change has been studied by many research groups across different domains. However, how groups choose to visualize
-the data changes depending upon the focus of the group and what questions they're trying to answer. The teams software
+the data changes depending upon the focus of the group and what questions they're trying to answer. The team's software
 capabilities also come in to play, with some groups researching air pollution having little to no background in 
 programming or information visualization. Zell et al. (2010) found that, between the years 1955 and 2006, 
 26,253 different titles were published relating to air pollution from 124 different countries [Zell et al. 2010]. 
 
 
 Judging by this influx of publications, air pollution is clearly an issue that has garned interest from people of all
-backgrounds and interest. It is also important to note that humans play a large role in air pollution, with
+backgrounds and interests. It is also important to note that humans play a large role in air pollution, with
 NASA releasing satellite visualizations of our impact on air quality [NASA]. Air pollution is also extremely dangerous,
-with an estimated 2.4 million fatalities occurring each year due to unsafe living conditions caused by air pollution[WHO].
+with an estimated 2.4 million fatalities occurring each year due to unsafe living conditions caused by air pollution [WHO].
 Different groups of researchers have attempted to create visualizations that both inform
 experts and the general public while also being used to glean meaningful information about different atmospheric trends.
 
@@ -393,7 +393,8 @@ Figure \ref{fig:airPoll}.
    \caption{A screenshot from our implemented website visualizinng air pollution levels in the Western US. The user can hover over a state's block
    to reveal a tooltip that contains information about a state's pollution levels for that year. Here, we see that Montana had a pollution level of
    7.2ppm of harmful particulate matter in the given year, which is a decrease of 0.399 ppm from the previous year. The red circle highlights the arrow
-   that appears on the scale when hovering over the block, to provide a means of comparison with other states.\label{fig:screenshot_hover}}
+   that appears on the scale when hovering over the block that indicates where a state is in relation to others, to provide a means of comparison 
+   with other states.\label{fig:screenshot_hover}}
 \end{figure}
 
 
@@ -437,7 +438,7 @@ increased the usability of our visualization and furthered the ever-present goal
 
 Third, we encountered an issue in early devlopment where certain values larger than 10.0 would display incorrectly as 9.9. This was quickly
 found to be a bug in the database settings - the database capped display of numbers at two digits. We were able to remedy this by changing 
-a setting in the database options and explicitly stating in the code that we wanted more than two digits. 
+a setting in the database options and explicitly stating in the code that we wanted more than two digits to display. 
 
 Finally, when we finished the visualization and deployed it to a live site, we realized that there was a logical error in our code
 that caused the first year of information (2007) to show incorrectly. This arose from how we structured our code: when we build a 
@@ -461,7 +462,7 @@ over the past ten years. This was surprising, because we expected to see somethi
 would suggest that climate change was damaging air quality faster than we could combat it). Instead, we didn't see any clear 
 trend to the direction of air quality fluctuations. There were periods of constantly increasing air quality for the majority 
 of states (e.g., 2010-2011), but these periods were followed by a sharp decrease in air quality (e.g. 2012). See Figures \ref{fig:2011_viz}
-and \ref{2012_viz} for a visual comparison of these phenomena.
+and \ref{fig:2012_viz} for a visual comparison of these phenomena.
 
 \begin{figure}
    \includegraphics[width=\columnwidth]{2011_viz.png}
@@ -478,13 +479,13 @@ and \ref{2012_viz} for a visual comparison of these phenomena.
 When looking at individual states, however, we did see trends. For example, California consistently had the largest amount of air
 pollution over the time span of the visualization, regardless of whether the levels increased or decreased from the previous year.
 Interestingly, in 2015 and 2016, Idaho was almost tied with California for the highest amonut of air pollution - but at the end
-of the visualization time span, California's air quality was getting better whild Idaho's was getting worse.
+of the visualization time span, California's air quality was getting better, while Idaho's was getting worse.
 
-Hawaii and Wyoming were roughly tied for the lowest consistent amount of pollution from the beginning until about 2011, when Hawaii
+Hawaii and Wyoming were roughly tied for the lowest consistent amount of pollution from the beginning of the time span until about 2011, when Hawaii
 experienced a sharp decline in air quality and Wyoming suddenly experienced better air. (An example of this can be seen in \ref{fig:2011_viz}).
 Since that time, until the end of the visualization time span, Wyoming consistenly had the lowest amount of air pollution. 
 
-Looking at this model through the eyes of someone who might want to move to one of these states, there are certainly better choices than 
+Looking at this model through the eyes of someone who might want to move to one of these states, some regions are certainly better choices than 
 others. For instance, a person with asthma or breathing difficulties would probably not want to move to Alaska in the near future - though
 the state was never the worst offender in terms of air quality levels, Alaska's pollution levels showed a sharp increase in the later few
 years of the visualization - indicating that Alaska might soon become a low air quality state. On the other hand, this person might consider
@@ -493,7 +494,7 @@ colored blue, which indicates a steady increase in air quality.
 
 \subsection{Data Set}
 
-As mentioned in the Methods section, we sed ten years' worth of air pollution data from the United Health Foundation's
+As mentioned in the Methods section, we used ten years' worth of air pollution data from the United Health Foundation's
 website on the topic. See that section for a more detailed description of how we obtained the data. 
 This gave us a set consisting of 110 data points (11 states x 10 years) that we leveraged to build our visualizaton. 
 
@@ -502,12 +503,12 @@ This gave us a set consisting of 110 data points (11 states x 10 years) that we 
 Our visualization models two dimensions of the data. First, it maps the magnitude of a state's pollution levels to 
 the spatial domain using the size of the block in the treemap. A larger block corresponds to higher levels of pollution, 
 while a smaller block means lower pollution levels. In a way, the spatial dimensions of each block can be though of as 
-"how big" the state's contribution is to the overally level of air pollution in the Western US.
+"how big" the state's contribution is to the overall level of air pollution in the Western US.
 
 Second, we represent the temporal dimension of the data (over a span of 10 years) through the relative, changing colors of each block
 in the treemap. When viewing a given year's treemap, the color of the blocks indicates the change in air pollution levels 
 from the previous year. This gives a sense of time to the data and firmly grounds our model in the temporal domain. Without
-this dimension, it would be much harder to find interesting trends over time - we would have no mechanism to compare 
+this dimension, it would be much harder to find interesting trends over time - we would have no mechanism to directly compare 
 across years.
 
 \subsection{Performance}
