@@ -343,7 +343,7 @@ containing all the values of the air pollution for each state and year, and "nam
 
 \subsection{Design of the Interface}
 
-\begin{figure}[h!]
+\begin{figure}
 \centering
 \includegraphics[width=\columnwidth]{HW1Design.PNG}
 \caption{Our initial design for a visualization using a tree map describing the levels of air pollution in the western region by block size. See the text for more description.}
@@ -402,8 +402,8 @@ interact with the visualization. A screenshot of this website can be seen in Fig
 This website is live, and can be viewed and interacted with at the following link:
 \url{http://infovizhw2.s3-website-us-west-2.amazonaws.com/}.
 
-As mentioned before, we used Amazon Web Services to host our website and our database of information. This allowed us to
-use the Google Charts library as a framework for our treemap. We leveraged the Charts API to build our treemap, querying our
+As mentioned before, we used Amazon Web Services (S3 bucket) to host our website and our database of information. This allowed us to
+use the Google Charts library as a framework for our treemap. We leveraged the Charts API and Amazon's Lamdba service to build our treemap, querying our
 database on page load and then feeding the resulting data into the JSON treemap object. Since we had ten years' worth of data to
 visualise, we decided to create each year's treemap on an "as needed" basis - that is, we create the 2007 (default) treemap when the
 page is initially loaded, then create each subsequent year's treemap as the user selects each year from the dropdown menu.
@@ -434,6 +434,10 @@ colorblindness. Thus, by choosing red and green, we made our visulaization virta
 To address this, we changed our color scheme to orange and blue gradients, where blue is a decreasing (better) level of air pollution and orange
 is an increasing (worse) level of pollution. As before, more saturated colors represent higher rates of change from year to year. This simple change
 increased the usability of our visualization and furthered the ever-present goal of accessibility in public softwares.
+
+Third, we encountered an issue in early devlopment where certain values larger than 10.0 would display incorrectly as 9.9. This was quickly
+found to be a bug in the database settings - the database capped display of numbers at two digits. We were able to remedy this by changing 
+a setting in the database options and explicitly stating in the code that we wanted more than two digits. 
 
 Finally, when we finished the visualization and deployed it to a live site, we realized that there was a logical error in our code
 that caused the first year of information (2007) to show incorrectly. This arose from how we structured our code: when we build a 
@@ -508,7 +512,7 @@ across years.
 
 \subsection{Performance}
 
-Our visualization performed well in its intended task. It gave an effecient and effective overview of air quality in this 
+Our visualization performed well in its intended task. It gave an efficient and effective overview of air quality in this 
 region of the country and allowed not only the identification of certain "problem" states that had persistently bad
 air quality, but also the states that would be more likely to maintain their good air quality in the future.
 
@@ -518,10 +522,41 @@ not any trend - that the fluctuations did not follow any pattern. Another explan
 able to figure out with this method of visualization. This is a possible idea for future work in this area. 
 
 \subsection{Supplementary Materials}
-** alannah said: link to source code - so I guess here we could link to our github or something **
 
-\subsection{Domain Expert}
-Amb
+We used GitHub to organize our materials and code for the paper and the website. 
+
+Paper repository: \url{https://github.com/horvathaa/cs458/}
+
+Visualization repository: \url{https://github.com/kbajno/cs458-assign2/}
+
+The visualization website itself can be viewed and interacted with at 
+\url{http://infovizhw2.s3-website-us-west-2.amazonaws.com/}.
+
+
+\subsection{Domain Expert Review}
+
+Since one of our group members intends to live in the Western US when she gradutes and 
+is interested in air quality indices for the geographic regions, we had her act as the 
+domain expert for reviewing a visualization. She has taken two environmental science 
+classes that covered the causes and effect of air pollution in detail, so she has
+enough background experience to count as one with domain knowledge in this case.
+
+Overall, the expert was positive towards our visualization. She mentioned that she was
+able to get a good overall feel for the data at a high level, and liked that the user
+could click or hover on each state to gain deeper insights into the data. She was able
+to use our visualization to track Oregon across the ten years and was pleased to find
+that the state never showed any huge increases in air pollution levels (Oregon tended
+to stay roughly the same across the time span). 
+
+One criticism she had, however, was that it was somewhat difficult to see how certain 
+states compared across the years. With the way that the Google Charts API builds a 
+treemap, the size of the blocks determines the order in which they appear in the map. 
+This can lead to confusion when certain states experience significant changes in the 
+magnitude of their air pollution - the state's block might move from the left side of
+the map one year to the right side in the next year. In this way, she suggested that
+we consider freezing the states in place relative to each other to make comparisons
+across time easier at a glance.
+
 
 \section{Conclusion and Future Work}
 
