@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.3.16)  7 MAY 2017 15:27
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.3.16)  7 MAY 2017 15:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -542,7 +542,7 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 199.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 200.
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ú in font ptmr7t!
@@ -553,29 +553,31 @@ Missing character: There is no ù in font ptmr7t!
 
 
  <./diamondrule.pdf>]
+Underfull \vbox (badness 7759) has occurred while \output is active []
+
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
 
-Overfull \hbox (4.74335pt too wide) in paragraph at lines 291--293
+Overfull \hbox (4.74335pt too wide) in paragraph at lines 292--294
 []\OT1/ptm/m/n/9 (-20) Washington: http://www.americashealthrankings.org/explor
 e/2015-
  []
 
 
-Overfull \hbox (7.78354pt too wide) in paragraph at lines 300--301
+Overfull \hbox (7.78354pt too wide) in paragraph at lines 301--302
 []\OT1/ptm/m/n/9 (-20) New Mex-ico: http://www.americashealthrankings.org/explo
 re/2015-
  []
 
 
-Underfull \hbox (badness 2662) in paragraph at lines 301--302
+Underfull \hbox (badness 2662) in paragraph at lines 302--303
 []\OT1/ptm/m/n/9 (+20) Idaho: http://www.americashealthrankings.org/explore/201
 5-
  []
 
 
-Underfull \hbox (badness 6995) in paragraph at lines 302--303
+Underfull \hbox (badness 6995) in paragraph at lines 303--304
 []\OT1/ptm/m/n/9 (+20) Utah: http://www.americashealthrankings.org/explore/2015
 -
  []
@@ -584,43 +586,40 @@ Underfull \hbox (badness 6995) in paragraph at lines 302--303
 File: cs458-ER-diagram-ass1.png Graphic file (type png)
 
 <use cs458-ER-diagram-ass1.png>
-Package pdftex.def Info: cs458-ER-diagram-ass1.png used on input line 321.
+Package pdftex.def Info: cs458-ER-diagram-ass1.png used on input line 322.
 (pdftex.def)             Requested size: 251.31898pt x 73.74864pt.
 
 <state_db.png, id=124, 419.06563pt x 329.73187pt>
 File: state_db.png Graphic file (type png)
  <use state_db.png>
-Package pdftex.def Info: state_db.png used on input line 329.
+Package pdftex.def Info: state_db.png used on input line 330.
 (pdftex.def)             Requested size: 251.31898pt x 197.74504pt.
 
 <air_poll_db.png, id=125, 767.86874pt x 139.52126pt>
 File: air_poll_db.png Graphic file (type png)
  <use air_poll_db.png>
-Package pdftex.def Info: air_poll_db.png used on input line 337.
+Package pdftex.def Info: air_poll_db.png used on input line 338.
 (pdftex.def)             Requested size: 251.31898pt x 45.6632pt.
 
 <HW1Design.PNG, id=126, 869.87485pt x 516.42938pt>
 File: HW1Design.PNG Graphic file (type png)
  <use HW1Design.PNG>
-Package pdftex.def Info: HW1Design.PNG used on input line 347.
+Package pdftex.def Info: HW1Design.PNG used on input line 348.
 (pdftex.def)             Requested size: 251.31898pt x 149.20119pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[2] <2013_viz.png, id=136, 1041.8925pt x 599.23875pt>
+ [2]
+<2013_viz.png, id=136, 1041.8925pt x 599.23875pt>
 File: 2013_viz.png Graphic file (type png)
  <use 2013_viz.png>
-Package pdftex.def Info: 2013_viz.png used on input line 385.
+Package pdftex.def Info: 2013_viz.png used on input line 386.
 (pdftex.def)             Requested size: 251.31898pt x 144.54259pt.
 
 <screenshot_hover.jpg, id=137, 649.42625pt x 384.43625pt>
 File: screenshot_hover.jpg Graphic file (type jpg)
 
 <use screenshot_hover.jpg>
-Package pdftex.def Info: screenshot_hover.jpg used on input line 391.
+Package pdftex.def Info: screenshot_hover.jpg used on input line 392.
 (pdftex.def)             Requested size: 251.31898pt x 148.76805pt.
-LaTeX Font Info:    Try loading font information for OT1+txtt on input line 402
+LaTeX Font Info:    Try loading font information for OT1+txtt on input line 403
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txtt.fd
@@ -631,52 +630,52 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 402.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 403.
  [3 <./cs458-ER-diagram-ass1.png> <./state_db.png> <./air_poll_db.png> <./HW1De
 sign.PNG>] [4 <./2013_viz.png> <./screenshot_hover.jpg>]
 
-LaTeX Warning: Reference `2012_viz' on page 5 undefined on input line 459.
+LaTeX Warning: Reference `2012_viz' on page 5 undefined on input line 460.
 
 <2011_viz.png, id=164, 1008.01593pt x 599.99156pt>
 File: 2011_viz.png Graphic file (type png)
  <use 2011_viz.png>
-Package pdftex.def Info: 2011_viz.png used on input line 462.
+Package pdftex.def Info: 2011_viz.png used on input line 463.
 (pdftex.def)             Requested size: 251.31898pt x 149.58554pt.
 
 <2012_viz.png, id=165, 1000.48781pt x 601.4972pt>
 File: 2012_viz.png Graphic file (type png)
  <use 2012_viz.png>
-Package pdftex.def Info: 2012_viz.png used on input line 468.
+Package pdftex.def Info: 2012_viz.png used on input line 469.
 (pdftex.def)             Requested size: 251.31898pt x 151.08981pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 525.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 535.
  [5 <./2011_viz.png> <./2012_viz.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 525.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 535.
  (./template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 525.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 525.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 535.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 535.
 Package rerunfilecheck Info: File `template.out' has not changed.
 (rerunfilecheck)             Checksum: 56945987875CE46710512D34E85951D5;1535.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 525.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 535.
  ) 
 Here is how much of TeX's memory you used:
  7844 strings out of 495063
  119610 string characters out of 3182201
- 233881 words of memory out of 3000000
+ 231881 words of memory out of 3000000
  10664 multiletter control sequences out of 15000+200000
  49138 words of font info for 217 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 33i,7n,35p,660b,324s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 33i,7n,35p,660b,347s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/txtt.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
 tmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on template.pdf (5 pages, 2956938 bytes).
+Output written on template.pdf (5 pages, 2957902 bytes).
 PDF statistics:
  208 PDF objects out of 1000 (max. 8388607)
  177 compressed objects within 2 object streams
