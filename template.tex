@@ -445,11 +445,47 @@ we are visualizing, we thought this would be the best way to avoid misrepresenti
 visualization overall.
 
 \section{Results}
-Alannah
 
 \subsection{Insights}
 
-** ??? I don't really know what kinds of insights we'd find but we will see I guess **
+Visualizing the air pollution data in this way reveals some interesting insights.
+
+First of all, we found that there was no overall, unifying trend to the level of air pollution in the Western US
+over the past ten years. This was surprising, because we expected to see something - either a general increase in air quality
+(which would suggest that climate change initiatives were effective) or a general decrease in air quality (which
+would suggest that climate change was damaging air quality faster than we could combat it). Instead, we didn't see any clear 
+trend to the direction of air quality fluctuations. There were periods of constantly increasing air quality for the majority 
+of states (e.g., 2010-2011), but these periods were followed by a sharp decrease in air quality (e.g. 2012). See Figures \ref{fig:2011_viz}
+and \ref{2012_viz} for a visual comparison of these phenomena.
+
+\begin{figure}
+   \includegraphics[width=\columnwidth]{2011_viz.png}
+   \caption{A screenshot of our visualization for the year 2011. The majority of the states showed moderate to large increases
+   in air quality from the year before, as evidenced by most of the blocks being a shade of blue rather than orange. \label{fig:2011_viz}}
+\end{figure}
+
+\begin{figure}
+   \includegraphics[width=\columnwidth]{2012_viz.png}
+   \caption{A screenshot of our visualization for the year 2012, directly after the previous figure. Here, the majority of states
+   showed decreases in air quality, as evidenced by most blocks being a shade of orange.\label{fig:2012_viz}}
+\end{figure}
+
+When looking at individual states, however, we did see trends. For example, California consistently had the largest amount of air
+pollution over the time span of the visualization, regardless of whether the levels increased or decreased from the previous year.
+Interestingly, in 2015 and 2016, Idaho was almost tied with California for the highest amonut of air pollution - but at the end
+of the visualization time span, California's air quality was getting better whild Idaho's was getting worse.
+
+Hawaii and Wyoming were roughly tied for the lowest consistent amount of pollution from the beginning until about 2011, when Hawaii
+experienced a sharp decline in air quality and Wyoming suddenly experienced better air. (An example of this can be seen in \ref{fig:2011_viz}).
+Since that time, until the end of the visualization time span, Wyoming consistenly had the lowest amount of air pollution. 
+
+Looking at this model through the eyes of someone who might want to moove to one of these states, there are certainly better choices than 
+others. For instance, a person with asthma or breathing difficulties would probably not want to move to Alaska in the near future - though
+the state was never the worst offender in terms of air quality levels, Alaska's pollution levels showed a sharp increase in the later few
+years of the visualization - indicating that Alaska might soon become a low air quality state. On the other hand, this person might consider
+a move to Montana - the rural state had a consistently low level of air pollution (though never the actual least), and was almost always
+colored blue, which indicates a steady increase in air quality.
+
 
 \subsection{Data Set}
 
@@ -462,7 +498,14 @@ why we chose that visualization/if it worked or not **
 
 \subsection{Performance}
 
-** no idea here since we're not running any sort of tests on it or doing any user studies lmao **
+Our visualization perfromed well in its intended task. It gave an effecient and effective overview of air quality in this 
+region of the country and allowed not only the identification of certain "problem" states that had persistently bad
+air quality, but also the states that would be more likely to maintain their good air quality in the future.
+
+However, as with any visualization, there were a few drawbacks to representing data in this fashion. For instance, as discussed
+in the Insights section, we could not discern any overall trend to the data. One explanation for this is that there really was
+not any trend - that the fluctuations did not follow any pattern. Another explanation is that there was a trend that we were not
+able to figure out with this method of visualization. This is a possible idea for future work in this area. 
 
 \subsection{Supplementary Materials}
 ** alannah said: link to source code - so I guess here we could link to our github or something **

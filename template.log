@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.3.16)  7 MAY 2017 12:02
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.3.16)  7 MAY 2017 15:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -634,24 +634,40 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 402.
  [3 <./cs458-ER-diagram-ass1.png> <./state_db.png> <./air_poll_db.png> <./HW1De
 sign.PNG>] [4 <./2013_viz.png> <./screenshot_hover.jpg>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 482.
- [5
 
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 482.
+LaTeX Warning: Reference `2012_viz' on page 5 undefined on input line 459.
+
+<2011_viz.png, id=164, 1008.01593pt x 599.99156pt>
+File: 2011_viz.png Graphic file (type png)
+ <use 2011_viz.png>
+Package pdftex.def Info: 2011_viz.png used on input line 462.
+(pdftex.def)             Requested size: 251.31898pt x 149.58554pt.
+
+<2012_viz.png, id=165, 1000.48781pt x 601.4972pt>
+File: 2012_viz.png Graphic file (type png)
+ <use 2012_viz.png>
+Package pdftex.def Info: 2012_viz.png used on input line 468.
+(pdftex.def)             Requested size: 251.31898pt x 151.08981pt.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 525.
+ [5 <./2011_viz.png> <./2012_viz.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 525.
  (./template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 482.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 482.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 525.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 525.
 Package rerunfilecheck Info: File `template.out' has not changed.
-(rerunfilecheck)             Checksum: C3E6444CFEB74459996600BBDD1539D2;1535.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 482.
+(rerunfilecheck)             Checksum: 56945987875CE46710512D34E85951D5;1535.
+
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 525.
  ) 
 Here is how much of TeX's memory you used:
- 7823 strings out of 495063
- 119345 string characters out of 3182201
- 233406 words of memory out of 3000000
- 10653 multiletter control sequences out of 15000+200000
- 48900 words of font info for 213 fonts, out of 3000000 for 9000
+ 7844 strings out of 495063
+ 119610 string characters out of 3182201
+ 233881 words of memory out of 3000000
+ 10664 multiletter control sequences out of 15000+200000
+ 49138 words of font info for 217 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  33i,7n,35p,660b,324s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
@@ -660,10 +676,10 @@ e/texmf-dist/fonts/type1/public/txfonts/txtt.pfb></usr/share/texlive/texmf-dist
 /urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
 tmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on template.pdf (5 pages, 2872004 bytes).
+Output written on template.pdf (5 pages, 2956938 bytes).
 PDF statistics:
- 200 PDF objects out of 1000 (max. 8388607)
- 173 compressed objects within 2 object streams
- 38 named destinations out of 1000 (max. 500000)
- 45812 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 208 PDF objects out of 1000 (max. 8388607)
+ 177 compressed objects within 2 object streams
+ 40 named destinations out of 1000 (max. 500000)
+ 45822 words of extra memory for PDF output out of 51595 (max. 10000000)
 
