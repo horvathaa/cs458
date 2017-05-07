@@ -363,8 +363,8 @@ air quality. Our initial design for the visualization is represented in Figure \
 
 After reviewing the current models available, our model provides an enhancement by providing an easy-to-understand
 metaphor for non-experts to view how their state's air pollution is changing over time. We achieve this through size
-and color changing to represent whether the air pollution levels are rising or lowering over time. For example, a large
-orange** block means that a state's air pollution is rapidly increasing.
+and color changing to represent whether the air pollution levels are rising or lowering over time. For example, a dark
+orange block means that a state's air pollution level is rapidly increasing.
 
 Previous models require an understanding of atmospheric sciences and are designed in mind for policy makers in the domain
 of city planning[Zahran et al.]. While users with more experience in the domain of atmospheric sciences may use our
@@ -381,10 +381,18 @@ Figure \ref{fig:airPoll}.
 
 \subsection{Website}
 
-\begin{figure}[h!]
+\begin{figure}
    \includegraphics[width=\columnwidth]{2013_viz.png}
    \caption{A screenshot from our implemented website visualizing air pollution levels in the Western US. The user can select which year's data they
    would like to view using the dropdown menu. \label{fig:screenshot_all}}
+\end{figure}
+
+\begin{figure}
+   \includegraphics[width=\columnwidth]{screenshot_hover.jpg}
+   \caption{A screenshot from our implemented website visualizinng air pollution levels in the Western US. The user can hover over a state's block
+   to reveal a tooltip that contains information about a state's pollution levels for that year. Here, we see that Montana had a pollution level of
+   7.2ppm of harmful particulate matter in the given year, which is a decrease of 0.399 ppm from the previous year. The red circle highlights the arrow
+   that appears on the scale when hovering over the block, to provide a means of comparison with other states.\label{fig:screenshot_hover}}
 \end{figure}
 
 
@@ -398,15 +406,43 @@ use the Google Charts library as a framework for our treemap. We leveraged the C
 database on page load and then feeding the resulting data into the JSON treemap object. Since we had ten years' worth of data to
 visualise, we decided to create each year's treemap on an "as needed" basis - that is, we create the 2007 (default) treemap when the
 page is initially loaded, then create each subsequent year's treemap as the user selects each year from the dropdown menu.
-This allowed us to optimize the initial loading speed of the page - since it only has to render one treemap on load, instead
+This allowed us to optimize the initial loading speed of the page - since it only has to render one treemap on load, instead of
 ten, the page shows up much faster.
 
-\subsection{Issues Encountered}
-**colorblindness
-**issues with DB on ONID
-**colors on initial year 2007
+In addition, to provide some interactivity and clarity to the visualization, we give users the ability to hover over a block to 
+gain more information about the state represented by that block (see Figure \ref{fig:screenshot_hover}). This tooltip gives the user the
+exact measure of air pollution levels in parts per million of that state in the chosen year. It also provides the user information about
+how much the magnitude of pollution changed from the previous year. In this way, the user has direct access to the data if they so desire it - 
+giving them flexibility in how they interact with the visualization and increasing its utility.
 
-Alannah
+\subsection{Issues Encountered and Resulting Design Choices}
+
+As with any visualization project, there were some unexpected issues encountered in our implementation. 
+
+First, we initially intended to host our website and database on the OSU servers, since that was the platform that we were
+most familiar with. However, we found out during implementation that we could not leverage the Google Charts API if we did
+this. As a result, we moved our development to Amazon Web Service's databases and servers, which had fewer restrictions on 
+how APIs could be used. Though this changed where our visualization was hosted, it required only minimal modifications to 
+our code and overall allowed us to create a better end product.
+
+Second, as seen in our initial design (Figure \ref{fig:Design}), we planned to use red and green coloring for the treemap components, mapping
+decreasing (better) air pollution levels to various saturations of green and increasing (worse) air pollution levels to reds. We believed
+that this would intuitively make the "most sense" to the user, since green is "good" and red is "bad" in many visualizations. However, when
+one of our group members spoke with the class's teaching assistant, he pointed out that red-green colorblindness is the most common form of
+colorblindness. Thus, by choosing red and green, we made our visulaization virtaully useless to a small but significant subset of the population.
+To address this, we changed our color scheme to orange and blue gradients, where blue is a decreasing (better) level of air pollution and orange
+is an increasing (worse) level of pollution. As before, more saturated colors represent higher rates of change from year to year. This simple change
+increased the usability of our visualization and furthered the ever-present goal of accessibility in public softwares.
+
+Finally, when we finished the visualization and deployed it to a live site, we realized that there was a logical error in our code
+that caused the first year of information (2007) to show incorrectly. This arose from how we structured our code: when we build a 
+treemap and determine what colors the blocks should be, we use the data from the previous year's measurements to determine the saturation
+and hue of each block's color. Since we do not have measurements from prior to 2007, we did not have a value to compare 2007's measurements
+against. Due to the way we calculated the change, this missing value caused all the blocks in the 2007 treemap to appear dark orange - implying
+every state's air pollution levels had increased drasically since the last year. Since this is likely incorrect, we decided to make 2007's blocks
+all grey in color, indicating no measured change from the previous year. Though this does make the 2007 treemap lack one dimension of the information
+we are visualizing, we thought this would be the best way to avoid misrepresenting data that we didn't have, leading to a more accurate
+visualization overall.
 
 \section{Results}
 Alannah
@@ -432,6 +468,7 @@ why we chose that visualization/if it worked or not **
 ** alannah said: link to source code - so I guess here we could link to our github or something **
 
 \subsection{Domain Expert}
+Amb
 
 \section{Conclusion and Future Work}
 
