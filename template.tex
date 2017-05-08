@@ -210,27 +210,27 @@ the block; blue = decreasing/getting better, orange = increasing/getting worse, 
 Climate change has been studied by many research groups across different domains. However, how groups choose to visualize
 the data changes depending upon the focus of the group and what questions they're trying to answer. The team's software
 capabilities also come in to play, with some groups researching air pollution having little to no background in 
-programming or information visualization. Zell et al. (2010) found that, between the years 1955 and 2006, 
-26,253 different titles were published relating to air pollution from 124 different countries [Zell et al. 2010]. 
+programming or information visualization. Zell et al. found that, between the years 1955 and 2006, 
+26,253 different titles were published relating to air pollution from 124 different countries [1]. 
 
 
 Judging by this influx of publications, air pollution is clearly an issue that has garned interest from people of all
 backgrounds and interests. It is also important to note that humans play a large role in air pollution, with
-NASA releasing satellite visualizations of our impact on air quality [NASA]. Air pollution is also extremely dangerous,
-with an estimated 2.4 million fatalities occurring each year due to unsafe living conditions caused by air pollution [WHO].
+NASA releasing satellite visualizations of our impact on air quality [2]. Air pollution is also extremely dangerous,
+with an estimated 2.4 million fatalities occurring each year due to unsafe living conditions caused by air pollution [3].
 Different groups of researchers have attempted to create visualizations that both inform
 experts and the general public while also being used to glean meaningful information about different atmospheric trends.
 
 In an effort to inform city planners on how to structure future traffice schemes, Zahran et al. ran a case study
 to test their implementation of a 3D city model with an overlay of the changing air pollution through different types of
-visualizations[Zahran et al.]. 
+visualizations [4]. 
 Through their different tests, they found that users best understood the metaphor of smog clouds 
 covering the more polluted areas and less clouds over the more clear areas.
 Perhaps an easily understandable metaphor is a good way to inform the public on levels of air pollution - however, how
 to do this on a state by state basis and capture the temporal aspect may not be possible with the cloud metaphor. 
 
 Elbir created a system to estimate the ambient air pollution levels temporally and spatially with the goal of mapping
-emissions and air quality levels [Elbir 2004]. 
+emissions and air quality levels [5]. 
 The target users are policy makers in order to inform and predict air quality changes within the region they are 
 evaluating. Elbir uses darker markings on a map of the area to show concentration of harmful air pollutants.
 The advantage of Elbir's system is that, not only does it visualize current air pollution, it also predicts future
@@ -238,8 +238,8 @@ pollution levels based upon the data currently available. This might be an avenu
 visualization to help citizens of the states we are visualizing to better understand whether their state is at risk or
 to see if it is imporiving over time. 
 
-Wang et al. created a viewpoint-based method for rendering of visualizations that promotes speed and interactivity [Wang 
-et al 2010]. Speed is important as, if the data is consistently being sampled, being able to render and update on the 
+Wang et al. created a viewpoint-based method for rendering of visualizations that promotes speed and interactivity [6]. 
+Speed is important as, if the data is consistently being sampled, being able to render and update on the 
 fly leads to the most accurate and relevant information being shared. This type of sampling is important for government
 officials to keep their patrons informed if a certain area is reaching dangerous levels of pollution. The scope of our
 project does not reach that level of criticality, but if we shifted our audience towards government officials, their
@@ -247,24 +247,24 @@ system might be an avenue for implementation efforts.
 
 The kind of work Wang et al. are doing is similar to the work of Li et al. Li et al. aimed to create many different
 visualizations to inform policy makers in Beijing what is causing the rapid increase in air pollution and to analyze
-the trends in order to combat the air pollution [Li et al 2016]. The authors attempted different methods of 
+the trends in order to combat the air pollution [7]. The authors attempted different methods of 
 visualizations and found certain types of visualizations lead to different information being conveyed (e.g. scatter
 plots helped locate where data was missing). The authors also found that wind speed affected change in air pollution.
 Li et al. also leveraged some open source software in order to create their visualization. One such open source software is
-Openair, an R software package used to visual air quality [Openair].
+Openair, an R software package used to visual air quality [8].
 These findings suggest our visualization could be improved through supporting different visualizations depending
 upon what question the user is trying to answer through our visualization. For future work, we might also consider
 leveraging some of these open source software options in order to keep our product flexible and receptive to incoming
 data.
 
-Another different type of visualization researchers have tried is Bi et al.'s tree visualization [Bi et al.]. The tree is
+Another different type of visualization researchers have tried is Bi et al.'s tree visualization [9]. The tree is
 used to represent different polutant levels for each day throughout a month in a given area. This metaphor allows for
 a high level of accuracy, but does not provide a broader scale view or allow for easy comparison between different regions.
 
 Beyond purely visualizations but in the vein of informing the public, 
 Bohler et al. developed a system called APNEE (Air Pollution Network for Early warning and online information Exchange in
  Europe) as a ways of informing select citizens through mobile messages, online posts, and street panels when air pollution
- reaches certain critical levels [Bohler et al.]. 
+ reaches certain critical levels [10]. 
  Perhaps if we leveraged our software beyond merely a visualization and created an app, we
  could also distribute our information to patrons. For now, that is outside of the scope of our assignment, and wouldn't
  make a lot of sense unless we had more frequent updates on climate change (currently our system functions on a year-long
@@ -368,7 +368,7 @@ and color changing to represent whether the air pollution levels are rising or l
 orange block means that a state's air pollution level is rapidly increasing.
 
 Previous models require an understanding of atmospheric sciences and are designed in mind for policy makers in the domain
-of city planning[Zahran et al.]. While users with more experience in the domain of atmospheric sciences may use our
+of city planning [4]. While users with more experience in the domain of atmospheric sciences may use our
 software, we hope to create a visualization that is accessible to users of all backgrounds.
 
 \section{Implementation}
@@ -594,7 +594,7 @@ interpretation of our visualization is that the states would be ordered dependin
 being based solely upon size.
 
 In the future, we would like to enhance our visualization based upon both previous work and the insights we gained during
-the implementation and reviewing process. Previous work, such as [Elbir et al.] use the data they've received to predict future
+the implementation and reviewing process. Previous work, such as [5] use the data they've received to predict future
 levels of air pollution. Enhancing our model to predict future air pollution levels statewide would further our goal of informing
 the population about how their state is doing in comparison to other states and against itself. Furthermore, it would allow
 users from other states to see if they should move away to a cleaner state if they're concerned about air pollution. 
@@ -605,7 +605,35 @@ We would like to thank Oregon State University, Eugene Zhang, and the United Wor
 making this research possible.
 
 \section{References}
-[1] 
+
+  [1] H. Zell, D. Quarcoo, C. Scutaru, K. Vitzthum, S. Uibel, N. Schoffel, S. Mache, D. A. Gronenberg, and M. F. Spallek, 
+Air pollution research: visualization of activity using density-equalizing mapping and scientometric benchmarking procedures, Journal
+of Occupational Medicine and Toxicology 5(5), 2010.
+
+[2] NASA, New NASA Satellite Map Shows Human Fingerprint on Global Air Quality. Retrieved April 27th, 2017. 
+https://www.nasa.gov/press-release/new-nasa-satellite-maps-show-human-fingerprint-on-global-air-quality/
+
+[3] WHO, The Top 10 Causes of Death - WHO Facts Sheet No. 310. Retrieved April 27th, 2017.
+http://www.who.int/mediacentre/factsheets/fs310/en/index.html
+
+[4] E. M. Zahran, M. J. Smith, and L. D. Bennet, 3D Visualizations of Traffic-Induced Air Pollution Impacts of Urban Transport Schemes,
+Journal of Computing in Civil Engineering 27(5), 2013.
+
+[5] T. Elbir, A GIS based decision support system for estimation, visualization and analysis of air pollution for large Turkish cities,
+Atmospheric Environment 38, 2004.
+
+[6] S. Wang, C. Wang, Y. Huang, and W. Li, Volume Rendering and Clipping for Air Pollution Visualization, IEEE ICIECS, 2010.
+
+[7] H. Li, H. Fan, and F. Mao, A visualization approach to air pollution data exploration - a case study of air quality index (PM2.5) in
+Beijing, China, Atmosphere 35(7), 2016.
+
+[8] D.C. Carslaw and K. Ropkins, Openair—An R package for air quality data analysis, Environ. Model. Softw. 2012, 27–28, 52–61.
+
+[9] X. Bi, Z. Jiang, S. Cheng, and X. Meng, Air Pollution Data Visualization Based on the Shape of a Tree, VINCI, 2013.
+
+[10] T. Bohler, K. Karatzas, G. Peinel, T. Rose, and R. San Jose, Providing Multi-Modal Access to Environmental Data - Customizable 
+Information Services for Disseminating Urban Air Quality Information in APNEE, Computers, Environments, and Urban Systems 26, 2002, 39-61.
+
 
 \end{document}
 
